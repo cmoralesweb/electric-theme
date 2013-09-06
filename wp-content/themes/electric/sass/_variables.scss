@@ -1,0 +1,73 @@
+$font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$heading-font-family: 'Comfortaa', cursive;
+
+/////////Variables//////////////////
+$color1: #114f99;//Dark blue
+$color2: #3c82c0; //light blue
+$color3: darken(saturate(adjust_hue($color1, 359), 3), 20); //Navy blue
+$color4: desaturate(adjust_hue(lighten($color1, 1), 352), 41); //Grayish blue
+$color5: desaturate(adjust_hue(lighten($color1, 38), 355), 25); //Pale blue
+$color1-darker: desaturate(darken($color1, 11), 3);
+$color1-brighter: adjust_hue(lighten($color1, 31), 351);
+$contrast: #6FC63D;
+$contrast2: lighten(desaturate(adjust_hue($contrast, 352), 9), 8);
+
+$error-color: #CC1818;
+$warning-color: #de8e10;
+$info-color: #53A9E4;
+$success-color: #4ED462;
+
+//Grays, from ligher to darker:
+$gray1: #f7f7f7;
+$gray2: #e7e7e7;
+$gray3: #e0e0e0;
+$gray4: #c6c6c6;
+$gray5: #c3c3c5;
+
+
+//Gradients:
+$light-gradient: linear-gradient(#fff, $gray1 44%, $gray2 84%, $gray3);
+$color2-gradient: linear-gradient(lighten($color2, 4), $color2 29%, saturate(darken($color2, 4), 14) 81%, saturate(darken($color2, 15), 17));
+$color2-gradient-reversed: linear-gradient(#1a5e9a,  #266eae 29%, $color2 81%, #4ea6f0);
+$contrast-gradient: linear-gradient(lighten($contrast, 15%) 10%,  $contrast 70%, darken($contrast, 10%));
+$contrast-gradient-reversed: linear-gradient(darken($contrast, 15%), $contrast  40%,  lighten($contrast,5%) 80%) ;
+$contrast2-gradient: linear-gradient(lighten($contrast2, 10%) 10%,  $contrast2 70%, darken($contrast2, 10%));
+
+//Box Shadows:
+$color1-brighter-inner-shadow: 0 0 6px 3px rgba($color2, 0.7) inset, 0 0 2px 1px rgba(black,0.4);
+$off-blue-inner-shadow: 0 0 5px 3px rgba($color2, 0.5) inset, 0 0 2px 1px rgba(black,0.2);
+
+
+//Vertical Rhythm
+$base-font-size: 17px;
+$base-line-height: 28px;
+$round-to-nearest-half-line: false;
+
+
+
+// Grid --------------------------------------------------------------
+//Susy Variables
+$total-columns: 7;
+$column-width: 4em;
+$gutter-width: 2em;
+$grid-padding : 1em;
+$container-style: magic;
+
+
+$mobile-layout: 7 30em; // (Use 7 colums) up to max 29em
+$mobile-tablet-layout: 7 55em; // (Use 7 colums) up to max 48em
+$tablet-only-layout: 30em 55em; //Use between 29em and max 48em
+$tablet-layout: 30em; //Use from 29em up
+$desktop-layout: 55em 12; // (Use 12 colums) from 55em up
+$wide-layout: 16; //Use 16 colums when there is space enough
+
+///////
+
+
+
+$h1-size: 45px;
+$h2-size: 32px;
+$h3-size: 24px;
+$h4-size: 21px;
+$h5-size: 18px;
+$h6-size: 15px;

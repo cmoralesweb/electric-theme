@@ -1,0 +1,103 @@
+/********************************/
+/********************************/
+/***      =Portafolio         ***/
+/*******************************/
+/*******************************/
+
+.single-electric_portfolio,
+.page-template-template-portfolio-archive-php {
+    .thumbnail {
+        @extend %framed;
+        @extend %rounded-corner-med;
+    }
+}
+
+.single-electric_portfolio {
+    .entry-content,
+    .images,
+    .entry-meta,
+    #comments {
+        @include at-breakpoint($desktop-layout) {
+            @include span-columns(6, 12);
+        }
+    }
+
+    .entry-content,
+    .entry-meta,
+    #comments{
+        float: right;
+        clear: right;
+    }
+    .images {
+        @include leader;
+    }
+}
+
+.details {
+    dt {
+        font-weight: bold;
+    }
+    dl {
+        margin-bottom: 0.5em;
+    }
+    @include divider(both);
+    padding: 0.5em 0;
+}
+
+.page-template-template-portfolio-archive-php {
+    .wp-post-image {
+        border: 0;
+    }
+    .filterable-grid {
+        @include transition(width 1s ease-in-out);
+        @media screen and (max-width: 1240px) and (min-width: 800px){
+            width: 665px;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 799px) and (min-width: 378px) {
+            width: 330px;
+            margin: 0 auto;
+        }
+        li {
+            text-align: center;
+            margin-bottom: 25px; //Quicksand doesn't understand ems
+            height: 300px; // Explicitly declared to avoid weird behaviour in Firefox
+            float: left;
+            display: inline;
+            margin-right: 30px;
+            @media screen and (max-width: 799px) {
+                float: none;
+                display: block;
+                height: auto;
+            }
+        }
+    }
+    .entry-content {
+        @include span-columns(8 omega, 12);
+        @include prefix(2, 12);
+        @include suffix(2, 12);
+        @extend %txta-center;
+    }
+    .filter-wrapper {
+        clear: both;
+        @extend %txta-center;
+        .filter-title,
+        .filter,
+        .filter li {
+            display: inline;
+        }
+    }
+    .filterable-grid {
+        margin-top: 0;
+        padding-left: 0;
+        width: 100%!important;
+        @include pie-clearfix;
+    }
+    .page-title {
+        margin-top: 0;
+        @extend %txta-center;
+    }
+    .portfolio-title {
+        color: inherit;
+    }
+}

@@ -1,0 +1,24 @@
+
+jQuery(document).ready(function($){
+    $('#upload_logo_button').click(function(e) {
+      e.preventDefault();
+      frame = wp.media({
+        title : 'My Gallery Title',
+        multiple : true,
+        library : { type : 'image'},
+        button : { text : 'Insert' }
+    });
+      console.log(frame);
+      frame.on('close',function() {
+        var send_attachment_bkp = frame.editor.send.attachment;
+        frame.editor.send.attachment = function(props, attachment) {
+     //Update the preview
+     $('#upload_logo_preview img').attr('src', attachment.url);
+     $('#logo-image').val(attachment.url);
+     $('#hidden_input').val(attachment.id);
+     frame.editor.send.attachment = send_attachment_bkp;
+ };
+});
+      frame.open(this);
+  });
+});

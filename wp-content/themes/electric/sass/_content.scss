@@ -1,0 +1,345 @@
+
+/* =Content
+----------------------------------------------- */
+
+.sticky {
+    .entry-header {
+        .entry-title {
+            &:before{
+                @extend %icon-star:before;
+                float: right;
+                font-size: 0.75em;
+                margin-top: 0.25em;
+                padding: 0.1em;
+                @extend %light-gradient;
+                @extend %rounded-corner-sml;
+                @include box-shadow(0 1px 2px rgba(black, 0.5));
+            }
+        }
+    }
+}
+.hentry {
+    margin: 0 0 1.5em;
+    padding-bottom: 1em;
+    @include divider(bottom);
+}
+.entry-meta {
+    clear: both;
+}
+.byline {
+    display: none;
+}
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.posted-on {
+    &:before {
+        @extend %icon-calendar:before;
+        margin-right: 0.15em;
+    }
+}
+
+.tag-links-wrapper,
+.categories,
+footer.entry-meta {
+    .sep {
+        display: none;
+    }
+}
+
+.tag-links-wrapper {
+    p {
+        &:before {
+            @extend %icon-tag:before;
+        }
+    }
+}
+
+#author-avatar {
+    width: 80px;
+    margin-right: 10px;
+    float: left;
+}
+
+#author-description {
+    h2 {
+        @extend %h4-size;
+    }
+}
+
+#author-link {
+    a:before {
+        @extend %icon-user:before;
+    }
+}
+
+
+.related-articles {
+    h1 {
+        @extend %h2-size;
+    }
+    .entry-title {
+        @extend %h3-size;
+    }
+    .thumbnail {
+        float: left;
+        width: 150px;
+        margin: 10px 20px 0 0;
+        padding: 1%;
+    }
+    .flexslider {
+        @extend %light-inset;
+        @extend %rounded-corner-big;
+        padding: 0 1em 2.5em;
+        .flex-control-nav {
+            bottom: 0.5em;
+        }
+        .flex-prev,
+        .flex-next {
+            bottom: 0.1em;
+        }
+    }
+    .slides {
+     li {
+        min-height: 10em;
+    }
+}
+}
+
+.single {
+    .thumbnail {
+        @extend %framed;
+        @extend %rounded-corner-med;
+        @include trailer;
+    }
+}
+
+.title-group {
+    margin-bottom: 0.5em;
+}
+
+
+.entry-subtitle {
+    margin-top: 0;
+    @extend %h4-size;
+}
+
+.entry-header {
+    .comments-link,
+    .entry-date {
+        @include button(0 0.5em);
+        @extend %border-med-color2;
+        @extend %blackbg-blueinset;
+    }
+    .comments-link {
+        -webkit-animation: (shadow-blink 2s ease-in-out infinite alternate);
+        animation: (shadow-blink 2s ease-in-out infinite alternate);
+        &:hover,
+        &:focus,
+        &:active {
+            background: black;
+        }
+        a {
+           &:hover,
+           &:focus,
+           &:active {
+            text-decoration: none;
+            color: $color1-brighter;
+        }
+    }
+}
+}
+
+
+.entry-date,
+.comments-link a{
+    color: white;
+    font-size: 1.1em;
+}
+
+.comments-link {
+  @extend %txta-center;
+  @extend %rounded-corner-med;
+  a {
+    @extend .rotating-icon;
+    &:before{
+        @extend %icon-bubble:before;
+        margin-right: 0.15em;
+
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: $color1;
+    }
+}
+}
+
+
+.no-thumb,
+.single {
+    .entry-header .comments-link {
+        float: right;
+        margin-top: 0.5em;
+    }
+    .tag-links-wrapper,
+    .published {
+        border-top: 1px solid white;
+        box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.15), 0 -1px 1px -1px rgba(0, 0, 0, 0.2), 0 3px 1px -1px rgba(255, 255, 255, 0.8);
+        margin: 0.5em 0;
+        padding: 0.5em 0;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+footer.entry-meta {
+    .meta {
+        @include divider(top);
+        padding: 0.5em 0;
+    }
+    .tag-links-wrapper {
+        // @include divider(none);
+    }
+}
+
+.entry-header {
+    .more-link {
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Blog homepage / Archive  */
+.blog,
+.archive {
+    .with-thumb {
+        .entry-header {
+            .entry-meta {
+                position: relative;
+                overflow: hidden;
+                @extend %blackbg-blueinset;
+                @extend %rounded-corner-big;
+                padding: 8px;
+                .published,
+                .comments-link,
+                .tag-links-wrapper,
+                .more{
+                    position: absolute;
+                    color: white;
+                }
+                .more {
+                    @extend %txta-center;
+                }
+                .thumbnail {
+                    position: relative;
+                    @extend %framed;
+                    @extend %rounded-corner-med;
+                    left: 0%;
+                    @include transition(left 1s);
+                    z-index: 200;
+                }
+                .meta {
+                    position: absolute;
+                    z-index: 50;
+                    left: 1em;
+                    padding-top: 0;
+                    p {
+                        clip: auto!important;
+                        height: auto!important;
+                        overflow: auto!important;
+                        position: static!important;
+                        width: auto!important;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    padding-left: 5px;
+                }
+
+                .wp-caption-text {
+                    margin-bottom: 1.5em;
+                    color: $color3;
+                }
+            }
+            .more {
+                bottom: 0;
+                width: 100%;
+                z-index: 200;
+            }
+            .comments-link {
+                top: 10px;
+                right: 10px;
+                z-index: 300;
+            }
+            .published {
+                top: 1em;
+            }
+            .posted-on {
+                margin-right: 0.5em;
+            }
+            .tag-links-wrapper {
+                top: 5em;
+                max-width: 45%;
+            }
+            .published,
+            .tag-links-wrapper {
+                left: 1em;
+                font-size: 0.9em;
+            }
+        }
+    }
+    .no-thumb {
+        .tag-links-wrapper {
+            margin: -0.5em 0 0.5em;
+        }
+    }
+}
+
+/**** Archives  ***/
+
+.archive.date {
+    .page-title {
+        &:before {
+            @extend [data-icon]:before;
+            content: '\E004';
+            margin-right: 0.15em;
+        }
+    }
+}
+
+.blog,
+.archive{
+    .entry-header {
+        .entry-meta {
+            &:hover {
+                .thumbnail {
+                    left: 70%;
+                }
+            }
+        }
+    }
+}
+
+/**** Search results ***/
+
+.search-results {
+    .page-title {
+        span {
+            color: $color2;
+        }
+    }
+}

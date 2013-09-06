@@ -1,0 +1,78 @@
+@import "reset";
+@import "compass";
+@import "susy";
+
+
+
+//Base Styles
+
+$font-family: unquote("Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif") !default;
+
+a:focus{
+    outline: 1px dotted invert;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+}
+
+p,
+dl,
+hr,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset{
+    margin: 0;
+    @include trailer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    font-family: $heading-font-family;
+}
+
+h1{
+    @extend %h1-size;
+}
+h2{
+    @extend %h2-size;
+}
+h3{
+    @extend %h3-size;
+}
+h4{
+    @extend %h4-size;
+}
+h5{
+    @extend %h5-size;
+}
+h6{
+    @extend %h6-size;
+}
+
+

@@ -1,0 +1,91 @@
+/* =Frontpage
+----------------------------------------------- */
+.home.single-page {
+    @include at-breakpoint($mobile-tablet-layout){
+        .mission-statement,
+        .middle-sidebar .widget-title,
+        .intro  .widget-title,
+        .bottom-sidebar > h1,
+        .bottom-sidebar .widget-title {
+            text-align: center;
+        }
+    }
+    .mission-statement,
+    .middle-sidebar .widget-title,
+    .intro  .widget-title,
+    .bottom-sidebar > h1{
+        color: $color1;
+    }
+}
+
+
+.bottom-sidebar {
+    clear: both;
+}
+
+.home.single-page {
+    .bottom-sidebar > h1{
+        @extend %h2-size;
+    }
+    .intro {
+        margin-top: 2em;
+    }
+}
+
+@include at-breakpoint($desktop-layout){
+    .middle-sidebar,
+    .bottom-sidebar{
+        .first,
+        .second,
+        .third {
+            @include span-columns(4, 12);
+        }
+        .third {
+            @include omega;
+        }
+    }
+
+    .home.single-page {
+        .intro {
+            @include pie-clearfix;
+            &.two-widgets {
+                .showcase2 {
+                    @include span-columns(4 omega, 12);
+                }
+                .showcase1 {
+                    @include span-columns(8 , 12);
+                }
+            }
+        }
+    }
+}
+
+#specialties {
+    img {
+        @extend %framed;
+        @extend .aligncenter;
+        @extend %rounded-corner-med;
+        margin-top: 1.5em;
+    }
+    @include at-breakpoint($tablet-only-layout) {
+        .more {
+            float: left;
+            margin-right: 5%;
+            width: 25%;
+        }
+        .specialty {
+            @include pie-clearfix;
+        }
+        img {
+            margin-top: 0;
+        }
+    }
+    .specialty-title {
+        @extend %h3-size;
+    }
+}
+
+
+.specialty-title {
+    @extend %txta-center;
+}

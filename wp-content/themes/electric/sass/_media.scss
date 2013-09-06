@@ -1,0 +1,145 @@
+/* =Media
+----------------------------------------------- */
+
+.site-header img,
+.entry-content img,
+.comment-content img,
+.widget img,
+.thumbnail img,
+.middle-sidebar img {
+    max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+.site-header img,
+.entry-content img,
+img[class*="align"],
+img[class*="wp-image-"],
+.thumbnail img,
+.middle-sidebar img {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.site-header img,
+.entry-content img,
+img.size-full {
+    max-width: 100%;
+    width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.site-content .gallery {
+    margin-bottom: 1.5em;
+}
+.gallery-caption {
+}
+.site-content {
+    .gallery  {
+        a  img  {
+            border: none;
+            height: auto;
+            max-width: 85%;
+        }
+        dd {
+            margin: 0;
+        }
+    }
+    .gallery-columns-4 {
+        .gallery-item {
+            img {
+            }
+        }
+    }
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+.framed{
+    @extend %framed;
+    margin: 10px;
+}
+.entry-content,
+.thumbnail {
+    img  {
+        @extend %rounded-corner-med;
+    }
+}
+
+.wp-caption,
+.entry-attachment {
+    max-width: 100%;
+    @extend %txta-center;
+    background: white;
+    @include box-shadow(0 0 0 1px #CCC, 0 1px 1px 1px rgba(0, 0, 0, 0.5));
+    @extend %rounded-corner-big;
+    padding: 1.5% 1%;
+    &.aligncenter,
+    &.alignleft,
+    &.alignright {
+        margin-bottom: 1.5em;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 98%;
+         @include box-shadow(none); //Avoid double border
+     }
+     .wp-caption-text,
+     .entry-caption {
+        margin: 0.25em 0;
+    }
+}
+
+.post a{
+    img {
+        @include transition(box-shadow 0.25s);
+        &:hover,
+        &:active,
+        &:focus {
+            @include box-shadow(0 0 0 5px $color2, 0 0 0 1px #CCCCCC, 0 2px 5px 5px rgba(0, 0, 0, 0.5));
+        }
+    }
+}
+
+
+.avatar {
+    @extend %rounded-corner-sml;
+    @include box-shadow(0 1px 1px rgba(black, 0.5));
+}
+
+#wp-admin-bar-my-account {
+    .avatar {
+        border-radius: 0;
+    }
+}
+
+
+
+/* Media object  */
+.media, .media .media {
+    margin-top: 1.5em;
+}
+
+.media {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.media, .media-body {
+    overflow: hidden;
+}
+
+.media-object {
+    display: block;
+    max-width: none !important; //Stupid fix for stupid IE
+}

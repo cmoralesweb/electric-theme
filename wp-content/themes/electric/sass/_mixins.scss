@@ -1,0 +1,56 @@
+
+/* ==========================================================================
+Helper mixins: 
+
+Best use-> Apply it to a "virtual" class (placeholder) and extend that class later
+for the elements you want it to apply. This way, only the code that you use ends
+up in the final stylesheet. If you aren't going to use any of these, 
+you save a fair amount of code.
+========================================================================== */
+
+
+@mixin message ($message-color) {       
+    color: $message-color;
+    border-color: $message-color;
+    a {
+        color: $message-color; 
+    }
+}
+
+
+@mixin button($padding: 0.15em 0.50em, $border-radius: 15px) {
+    display: inline-block;
+    border-radius: $border-radius;
+    padding: $padding;
+    text-decoration: none;
+    @extend %txta-center;
+    min-width: 2em;
+}
+
+
+@mixin transitioned-transform($transition-time: 0.5s) {    
+    -webkit-transition: -webkit-transform $transition-time ease;
+    transition: transform $transition-time ease;
+}
+
+
+@mixin divider($side){
+    @if $side == top {
+        border-top: 1px solid white;
+        @include box-shadow(0 -2px 1px -1px rgba(0,0,0,0.2));
+    } 
+    @else if $side == bottom {
+        @include box-shadow(0 1px 1px -1px rgba(0,0,0,0.6),     
+            0 3px 1px -1px rgba(255,255,255,1));
+    } 
+    @else if $side == both {
+        border-top: 1px solid white;
+        @include box-shadow(0 1px 1px -1px rgba(0,0,0,0.6),     
+            0 -2px 1px -1px rgba(0,0,0,0.2), 
+            0 3px 1px -1px rgba(255,255,255,1));
+    }
+    @else if $side == none {
+        border: 0;
+        @include box-shadow(none);
+    }
+}

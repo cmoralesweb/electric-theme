@@ -1,0 +1,638 @@
+///////////
+// "Virtual" classes, good for semantics: applied with @extend rather than directly to the html
+// ///////
+//
+
+
+%rounded-corner-sml {
+    border-radius: 10px;
+}
+
+%rounded-corner-med {
+    border-radius: 15px;
+}
+
+%rounded-corner-big {
+    border-radius: 20px;
+}
+
+
+//Colors:
+%light-inset {
+    background: $gray2;
+    @include background-image(linear-gradient($gray2 80%, $gray4));
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.5) inset);
+}
+
+%blackbg-blueinset{
+    background: black;
+    color: white;
+    @include box-shadow($color1-brighter-inner-shadow);
+}
+
+%color1-gradient {
+    background: $color1;
+    @include background-image(linear-gradient($color1, $color1-darker));
+}
+
+%color2-gradient-reversed {
+    background: darken($color2, 5%);
+    @include background-image($color2-gradient-reversed);
+}
+
+%color2-gradient {
+    background: $color2;
+    @include background-image($color2-gradient);
+}
+
+%light-gradient {
+    background: $gray1;
+    @include background($light-gradient);
+}
+
+%contrast-gradient {
+    background: $contrast;
+    @include background-image($contrast-gradient);
+}
+
+%contrast2-gradient {
+   background: $contrast2;
+   @include background-image($contrast2-gradient);
+}
+
+%contrast2-gradient-reversed {
+   background: lighten($contrast2, 10);
+   @include background-image($contrast-gradient-reversed);
+}
+
+%framed {
+    /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
+    @include box-shadow(0 0 0 9px white, 0 0 0 1px #CCC, 0 2px 2px 9px rgba(0, 0, 0, 0.5));
+}
+
+%framed-small {
+    /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
+    @include box-shadow(0 0 0 4px white, 0 0 0 1px #CCC, 0 1px 1px 4px rgba(0, 0, 0, 0.4));
+}
+
+
+//Text
+%h1-size {
+    @include adjust-font-size-to($h1-size);
+}
+%h2-size {
+    @include adjust-font-size-to($h2-size);
+}
+%h3-size {
+    @include adjust-font-size-to($h3-size);
+}
+%h4-size {
+    @include adjust-font-size-to($h4-size);
+}
+%h5-size {
+    @include adjust-font-size-to($h5-size);
+}
+%h6-size {
+    @include adjust-font-size-to($h6-size);
+}
+
+%txta-center {
+    text-align: center;
+}
+
+
+%message-box {
+    padding: 1em;
+    margin-bottom:1.6em;
+    border:2px solid #ddd;
+    position: relative;
+    padding-left: 3em;
+    &:before {
+        position: absolute;
+        left: 0.5em;
+        top: 50%;
+        margin-top: -0.5em;
+        @include text-shadow(0 1px 1px rgba(black, 0.5));
+        font-size: 1.5em;
+    }
+}
+
+%error,
+%warning,
+%success,
+%info {
+    @extend %message-box;
+}
+
+%error {
+    background: lighten($error-color, 35%);
+    border-color: $error-color;
+    &:before {
+        color: $error-color;
+        @extend %icon-cancel:before;
+    }
+}
+
+%warning {
+    background: lighten($warning-color, 35%);
+    border-color: $warning-color;
+    &:before {
+        color: $warning-color;
+        @extend %icon-checkmark:before;
+    }
+}
+
+%success {
+    background: lighten($success-color, 30%);
+    border-color: $success-color;
+    &:before {
+        color: $success-color;
+        @extend %icon-checkmark:before;
+    }
+}
+
+%info {
+    background: lighten($info-color, 30%);
+    border-color: $info-color;
+    &:before {
+        color: $info-color;
+        @extend %icon-checkmark:before;
+    }
+}
+
+
+// Image replacement
+%ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
+}
+
+
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+%hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+//Hide only visually, but have it available for screenreaders: h5bp.com/v
+%visuallyhidden {
+ border: 0;
+ clip: rect(0 0 0 0);
+ height: 1px;
+ margin: -1px;
+ overflow: hidden;
+ padding: 0;
+ position: absolute;
+ width: 1px;
+}
+
+// Extends the .visuallyhidden class to allow the element to be focusable
+// when navigated to via the keyboard: h5bp.com/p
+%focusable {
+    &:active,
+    &:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
+
+
+// Hide visually and from screenreaders, but maintain layout
+%invisible {
+    visibility: hidden;
+}
+
+
+%blink {
+    -webkit-animation: (shadow-blink 1s ease-in-out infinite alternate);
+    animation: (shadow-blink 1s ease-in-out infinite alternate);
+}
+
+%border-med-color2{
+    border: 2px solid $color2;
+}
+
+%button {
+    @include button;
+}
+
+%main-button {
+    @extend %light-gradient;
+    @include box-shadow(0 0 2px 3px rgba($color1-brighter, 0), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.3) inset, 0 3px 3px #FFFFFF inset);
+    @include transition(box-shadow 0.5s);
+    color: $color2;
+    margin: 0.15em;
+    &:hover,
+    &:focus{
+        @include box-shadow(0 0 2px 3px rgba($color1-brighter, 0.9), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.1) inset, 0 3px 3px #FFFFFF inset);
+        color: $color1;
+    }
+    &:active {
+        @extend %color2-gradient-reversed;
+        color: $color3;
+    }
+}
+
+[data-icon]:before {
+    @extend %icon:before;
+}
+
+%icon {
+    &:before {
+        content: attr(data-icon); //For span elements
+    }
+}
+//Icons
+%icon-menu,
+%icon-user,
+%icon-search,
+%icon-bubble,
+%icon-bubbles,
+%icon-tag,
+%icon-pencil,
+%icon-calendar,
+%icon-glasses,
+%icon-plus,
+%icon-minus,
+%icon-download,
+%icon-mail,
+%icon-drawer,
+%icon-github,
+%icon-tumblr,
+%icon-dribbble,
+%icon-flickr,
+%icon-mail-2,
+%icon-reddit,
+%icon-pinterest,
+%icon-twitter,
+%icon-quote,
+%icon-file-zip,
+%icon-file-powerpoint,
+%icon-meter-fast,
+%icon-meter-medium,
+%icon-meter-slow,
+%icon-new-tab,
+%icon-redo,
+%icon-help,
+%icon-cancel,
+%icon-checkmark,
+%icon-star,
+%icon-enter,
+%icon-file-pdf,
+%icon-file-word,
+%icon-css3,
+%icon-html5,
+%icon-feed,
+%icon-gplus,
+%icon-stumbleupon,
+%icon-linkedin,
+%icon-tux,
+%icon-wordpress,
+%icon-facebook,
+%icon-twitter-2,
+%icon-zoom-in,
+%icon-home,
+%icon-arrow-right-alt1,
+%icon-arrow-left-alt1,
+%icon-pushpin,
+%icon-clock,
+%icon-equalizer,
+%icon-attachment,
+%icon-thumbs-up,
+%icon-thumbs-up-2,
+%icon-embed,
+%icon-code,
+%icon-right,
+%icon-heart,
+%icon-caret-down {
+    &:before {
+        @extend [data-icon]:before;
+        margin-right: 0.15em;
+    }
+}
+
+%icon-menu {
+    &:before {
+        content: "\e024";
+    }
+}
+%icon-user {
+    &:before {
+        content: "\e023";
+    }
+}
+%icon-search {
+    &:before {
+        content: "\e022";
+    }
+}
+%icon-bubble {
+    &:before {
+        content: "\e021";
+    }
+}
+%icon-bubbles {
+    &:before {
+        content: "\e018";
+    }
+}
+%icon-tag {
+    &:before {
+        content: "\e010";
+    }
+}
+%icon-pencil {
+    &:before {
+        content: "\e013";
+    }
+}
+%icon-calendar {
+    &:before {
+        content: "\e004";
+    }
+}
+%icon-glasses {
+    &:before {
+        content: "\263a";
+    }
+}
+%icon-plus {
+    &:before {
+        content: "\e01f";
+    }
+}
+%icon-minus {
+    &:before {
+        content: "\e01d";
+    }
+}
+%icon-download {
+    &:before {
+        content: "\e01c";
+    }
+}
+%icon-mail {
+    &:before {
+        content: "\e019";
+    }
+}
+%icon-drawer {
+    &:before {
+        content: "\e017";
+    }
+}
+%icon-github {
+    &:before {
+        content: "\e016";
+    }
+}
+%icon-tumblr {
+    &:before {
+        content: "\e015";
+    }
+}
+%icon-dribbble {
+    &:before {
+        content: "\26e2";
+    }
+}
+%icon-flickr {
+    &:before {
+        content: "\2689";
+    }
+}
+%icon-mail-2 {
+    &:before {
+        content: "\e012";
+    }
+}
+%icon-reddit {
+    &:before {
+        content: "\e001";
+    }
+}
+%icon-pinterest {
+    &:before {
+        content: "\2667";
+    }
+}
+%icon-twitter {
+    &:before {
+        content: "\e01e";
+    }
+}
+%icon-quote {
+    &:before {
+        content: "\275e";
+    }
+}
+%icon-file-zip {
+    &:before {
+        content: "\e01b";
+    }
+}
+%icon-file-powerpoint {
+    &:before {
+        content: "\e01a";
+    }
+}
+%icon-meter-fast {
+    &:before {
+        content: "\2b1c";
+    }
+}
+%icon-meter-medium {
+    &:before {
+        content: "\2b1b";
+    }
+}
+%icon-meter-slow {
+    &:before {
+        content: "\2b1a";
+    }
+}
+%icon-new-tab {
+    &:before {
+        content: "\27b2";
+    }
+}
+%icon-redo {
+    &:before {
+        content: "\27b6";
+    }
+}
+%icon-help {
+    &:before {
+        content: "\e020";
+    }
+}
+%icon-cancel {
+    &:before {
+        content: "\2612";
+    }
+}
+%icon-checkmark {
+    &:before {
+        content: "\e007";
+    }
+}
+%icon-star {
+    &:before {
+        content: "\2605";
+    }
+}
+%icon-enter {
+    &:before {
+        content: "\e00f";
+    }
+}
+%icon-file-pdf {
+    &:before {
+        content: "\e00e";
+    }
+}
+%icon-file-word {
+    &:before {
+        content: "\e00d";
+    }
+}
+%icon-css3 {
+    &:before {
+        content: "\e00c";
+    }
+}
+%icon-html5 {
+    &:before {
+        content: "\e00b";
+    }
+}
+%icon-feed {
+    &:before {
+        content: "\e00a";
+    }
+}
+%icon-gplus {
+    &:before {
+        content: "\e009";
+    }
+}
+%icon-stumbleupon {
+    &:before {
+        content: "\e008";
+    }
+}
+%icon-linkedin {
+    &:before {
+        content: "\2300";
+    }
+}
+%icon-tux {
+    &:before {
+        content: "\e006";
+    }
+}
+%icon-wordpress {
+    &:before {
+        content: "\e005";
+    }
+}
+%icon-facebook {
+    &:before {
+        content: "\e003";
+    }
+}
+%icon-twitter-2 {
+    &:before {
+        content: "\e000";
+    }
+}
+%icon-zoom-in {
+    &:before {
+        content: "\e002";
+    }
+}
+%icon-home {
+    &:before {
+        content: "\27f0";
+    }
+}
+%icon-arrow-right-alt1 {
+    &:before {
+        content: "\e025";
+    }
+}
+%icon-arrow-left-alt1 {
+    &:before {
+        content: "\e011";
+    }
+}
+%icon-pushpin {
+    &:before {
+        content: "\e014";
+    }
+}
+%icon-clock {
+    &:before {
+        content: "\e026";
+    }
+}
+%icon-equalizer {
+    &:before {
+        content: "\e027";
+    }
+}
+%icon-attachment {
+    &:before {
+        content: "\e028";
+    }
+}
+%icon-thumbs-up {
+    &:before {
+        content: "\e029";
+    }
+}
+%icon-thumbs-up-2 {
+    &:before {
+        content: "\e02a";
+    }
+}
+%icon-embed {
+    &:before {
+        content: "\e02b";
+    }
+}
+%icon-code {
+    &:before {
+        content: "\e02c";
+    }
+}
+%icon-right {
+    &:before {
+        content: "\e02d";
+    }
+}
+%icon-heart {
+    &:before {
+        content: "\e02e";
+    }
+}
+%icon-caret-down {
+    &:before {
+        content: "\e02f";
+    }
+}

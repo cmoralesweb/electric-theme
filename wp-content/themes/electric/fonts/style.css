@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'electric-icons';
+	src:url('fonts/electric.eot');
+	src:url('fonts/electric.eot?#iefix') format('embedded-opentype'),
+		url('fonts/electric.woff') format('woff'),
+		url('fonts/electric.ttf') format('truetype'),
+		url('fonts/electric.svg#electric') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
