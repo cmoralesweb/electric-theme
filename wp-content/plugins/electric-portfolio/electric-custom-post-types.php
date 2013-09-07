@@ -192,26 +192,25 @@ function render_custom_fields() {
  */
 function render_gallery_field(){
     global $post;
-    $gallery_ids = get_post_meta( $post->ID, '_electric_pf_gallery_ids', true );
+    $gallery_id = get_post_meta( $post->ID, '_electric_pf_gallery_id', true );
     $gallery = electric_pf_get_gallery_images( $post->ID, 'thumbnail' );
     ?>
     <?php wp_nonce_field($this->prefix."custom_fields_render", $this->prefix."custom_fields_nonce") ?>
     <p>
         <input id="<?php echo "_" . $this->prefix ?>gallery_button" type="button" data-upload-options='{"multiple": true,  "previewSize": "thumbnail"}'  class="electric-upload-button button" value="<?php _e( 'Upload Gallery', $this->textdomain ); ?>" />
-        <input type="hidden" id="<?php echo "_" . $this->prefix ?>gallery_ids" name="<?php echo "_" . $this->prefix ?>gallery_ids" value="<?php echo $gallery_ids ?>" />
+        <input type="hidden" id="<?php echo "_" . $this->prefix ?>gallery_id" name="<?php echo "_" . $this->prefix ?>gallery_id" value="<?php echo esc_attr( $gallery_id ) ?>" />
         <?php if ( $gallery ): ?>
         <input id="<?php echo "_" . $this->prefix ?>clear_gallery_button" name="<?php echo "_" . $this->prefix ?>clear_gallery_button" type="submit" class="button" value="<?php _e( 'Clear gallery', $this->textdomain ); ?>" />
     <?php endif; ?>
-</p>
-<div id="<?php echo "_" . $this->prefix ?>gallery_preview" style="min-height: 100px;">
-    <?php if ( $gallery ): ?>
-    <?php foreach ( $gallery as $key => $gallery_el ): ?>
-    <img src="<?php echo $gallery_el['src'] ?>" alt="<?php echo $gallery_el['alt'] ?>">
-<?php endforeach ?>
-<?php endif; ?>
-</div>
-
-<p class="description"><?php _e('Upload a gallery for this element.', 'electric' ); ?></p>
+    </p>
+    <div id="<?php echo "_" . $this->prefix ?>gallery_preview" style="min-height: 100px;">
+        <?php if ( $gallery ): ?>
+            <?php foreach ( $gallery as $key => $gallery_el ): ?>
+                <img src="<?php echo $gallery_el['src'] ?>" alt="<?php echo $gallery_el['alt'] ?>">
+            <?php endforeach ?>
+        <?php endif; ?>
+    </div>
+    <p class="description"><?php _e('Upload a gallery for this element.', 'electric' ); ?></p>
 <?php
 }
 
@@ -265,15 +264,14 @@ function save_custom_fields() {
 
                 if ( !empty($_POST["_" . $this->prefix ."clear_gallery_button"]) ) {
                     //User wants to clear the gallery
-                    update_post_meta($post->ID, "_" . $this->prefix . "gallery_ids", "");
+                    update_post_meta($post->ID, "_" . $this->prefix . "gallery_id", "");
                 } else {
-                    update_post_meta($post->ID, "_" . $this->prefix . "gallery_ids", esc_attr( $_POST["_" . $this->prefix . "gallery_ids"]) );
+                    update_post_meta($post->ID, "_" . $this->prefix . "gallery_id", esc_attr( $_POST["_" . $this->prefix . "gallery_id"]) );
                 }
             }
         }
     }
 }
-
 }
 
 new Electric_Portfolio;
@@ -282,7 +280,7 @@ include_once 'widget.php';
 /* Template functions */
 function electric_pf_get_gallery_images( $post_ID, $size = 'full' ){
     $image_array = false;
-    $gallery_images_IDs = get_post_meta( $post_ID, '_electric_pf_gallery_ids', true );
+    $gallery_images_IDs = get_post_meta( $post_ID, '_electric_pf_gallery_id', true );
     if( $gallery_images_IDs ) {
         $gallery_images_IDs = explode(',', $gallery_images_IDs);
         foreach ( $gallery_images_IDs as $image_ID ) {
