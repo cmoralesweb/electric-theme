@@ -5,13 +5,14 @@
             <div class="media-object-container"><?php electric_the_twitter_avatar($raw_tweet); ?></div>
             <div class="media-body"><?php the_content() ?></div>
         </div>
-
-        <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large'); ?>
-        <div class="thumbnail-wrapper">
-            <a href="<?php echo $large_image_url[0] ?>" title="<?php the_title_attribute()?>" class="thumbnail" >
-                <?php echo get_the_post_thumbnail($post->ID, 'medium'); ?>
-            </a>
-        </div>
+        <?php if ( has_post_thumbnail(  )): ?>
+                <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large'); ?>
+                <div class="thumbnail-wrapper">
+                    <a href="<?php echo $large_image_url[0] ?>" title="<?php the_title_attribute()?>" class="thumbnail" data-rel="lightbox" data-lightbox-options='{"type":"image"}'>
+                        <?php echo get_the_post_thumbnail($post->ID, 'medium'); ?>
+                    </a>
+                </div>
+        <?php endif ?>
         <?php electric_the_twitter_meta($raw_tweet) ?>
     </div>
     <?php if (!is_search() && !is_archive()) : ?>
