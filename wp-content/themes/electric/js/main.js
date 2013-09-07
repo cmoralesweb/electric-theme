@@ -48,8 +48,8 @@ jQuery( document ).ready( function( $ ) {
     if($().tooltip) {    //Only run if tooltip is active
         tooltip_fire();
     }
-    if($().prettyPhoto) {    //Only run if prettyPhoto is active
-        prettyPhoto_fire();
+    if($().magnificPopup) {    //Only run if magnificPopup is active
+        lightboxFire();
     }
 
     function flexslider_fire() {
@@ -100,10 +100,9 @@ jQuery( document ).ready( function( $ ) {
         });
     }
 
-    function prettyPhoto_fire() {
-        $("a[rel^='prettyPhoto']").prettyPhoto({
-            social_tools: ""
-        });
+    function lightboxFire() {
+        $lightboxEl = $('[data-rel="lightbox"]');
+        $lightboxEl.magnificPopup($lightboxEl.data('lightbox-options')); //Options passed via data- attribute
     }
 
     function quicksand_fire() {
