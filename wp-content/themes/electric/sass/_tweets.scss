@@ -13,6 +13,15 @@
     .more-link {
         margin: 0 auto;
     }
+    .thumbnail-wrapper {
+        @extend %txta-center;
+    }
+    .thumbnail {
+        @extend %framed;
+        @extend %rounded-corner-med;
+        display: inline-block;
+        @include trailer;
+    }
 }
 .twitter-avatar {
     @extend .media-object;

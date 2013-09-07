@@ -615,7 +615,7 @@ textarea, .success-message,
 #colophon .widget-title, .single .thumbnail, .comments-link, .blog .with-thumb .entry-header .entry-meta .thumbnail,
 .archive .with-thumb .entry-header .entry-meta .thumbnail, .entry-content img,
 .thumbnail img, #specialties img, .single-electric_portfolio .thumbnail,
-.page-template-template-portfolio-archive-php .thumbnail, .aktt_tweet .entry-content {
+.page-template-template-portfolio-archive-php .thumbnail, .aktt_tweet .entry-content, .aktt_tweet .thumbnail {
   border-radius: 15px;
 }
 
@@ -743,7 +743,7 @@ input[type="submit"],
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_placeholders\.scss}line{font-family:\0000368}}
 .single .thumbnail, .blog .with-thumb .entry-header .entry-meta .thumbnail,
 .archive .with-thumb .entry-header .entry-meta .thumbnail, .framed, .portfolio-showcase .portfolio-image, #specialties img, .single-electric_portfolio .thumbnail,
-.page-template-template-portfolio-archive-php .thumbnail {
+.page-template-template-portfolio-archive-php .thumbnail, .aktt_tweet .thumbnail {
   /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
   -webkit-box-shadow: 0 0 0 9px white, 0 0 0 1px #cccccc, 0 2px 2px 9px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0 9px white, 0 0 0 1px #cccccc, 0 2px 2px 9px rgba(0, 0, 0, 0.5);
@@ -796,7 +796,7 @@ input[type="submit"],
 .entry-header .entry-date, .comments-link, .blog .with-thumb .entry-header .entry-meta .more,
 .archive .with-thumb .entry-header .entry-meta .more, .wp-caption,
 .entry-attachment, .widgetarea-container .widget-title,
-.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .flex-control-nav, .tooltip-container {
+.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .aktt_tweet .thumbnail-wrapper, .flex-control-nav, .tooltip-container {
   text-align: center;
 }
 
@@ -3227,8 +3227,13 @@ object {
 .aktt_tweet .more-link {
   margin: 0 auto;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_tweets\.scss}line{font-family:\0000319}}
+.aktt_tweet .thumbnail {
+  display: inline-block;
+  margin-bottom: 1.64706em;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_tweets\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_tweets\.scss}line{font-family:\0000326}}
 .twitter-avatar {
   -webkit-box-shadow: 0 0 0 4px white, 0 0 0 1px #cccccc, 0 1px 1px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 0 4px white, 0 0 0 1px #cccccc, 0 1px 1px 4px rgba(0, 0, 0, 0.4);
