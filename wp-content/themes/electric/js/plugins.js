@@ -48,7 +48,7 @@ function setCookie(cookie_name, value, expiryHours)
         expiryHours = 1;
     }
     console.log(expiryHours);
-    document.cookie = cookie_name+ "=" + escape(value) + ";max-age=" + 60 * 60 * expiryHours;
+    document.cookie = cookie_name+ "=" + escape(value) + ";max-age=" + 60 * 60 * expiryHours + "; path=/";
 }
 
 /*
