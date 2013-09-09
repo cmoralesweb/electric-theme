@@ -79,7 +79,8 @@ jQuery( document ).ready( function( $ ) {
             position: "top center",
             offset: [-10, 0],
             tipClass: "tooltip-container",
-            effect: "fade"
+            effect: "fade",
+            delay: 100
         }).dynamic({
             bottom: {
                 direction: 'down',
@@ -91,7 +92,8 @@ jQuery( document ).ready( function( $ ) {
             offset: [-10, 0],
             relative: true,
             tipClass: "tooltip-container",
-            effect: "fade"
+            effect: "fade",
+            delay: 300
         }).dynamic({
             bottom: {
                 direction: 'down',
