@@ -105,6 +105,12 @@ jQuery( document ).ready( function( $ ) {
     function lightboxFire() {
         $lightboxEl = $('[data-rel="lightbox"]');
         $lightboxEl.magnificPopup($lightboxEl.data('lightbox-options')); //Options passed via data- attribute
+        $('.gallery a').magnificPopup({
+            "type":"image",
+            "gallery":
+                {"enabled":"true"}
+            }
+        );
     }
 
     function quicksand_fire() {

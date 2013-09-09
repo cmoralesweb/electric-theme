@@ -20,7 +20,7 @@ get_header();
                         <div class="gallery">
                             <?php foreach ( $gallery as $key => $image): ?>
                                 <?php $full_img = wp_get_attachment_image_src( $image['attachment_id'], 'full'); ?>
-                                <a href="<?php echo esc_url( $full_img[0] ) ?>" title="<?php echo esc_attr( $image['title'] ) ?>" alt="<?php echo esc_attr( $image['alt'] ) ?>" data-rel="lightbox" data-lightbox-options='{"type":"image", "gallery":{"enabled":"true"}}'>
+                                <a href="<?php echo esc_url( $full_img[0] ) ?>" title="<?php echo esc_attr( $image['title'] ) ?>" alt="<?php echo esc_attr( $image['alt'] ) ?>">
                                     <img src="<?php echo esc_url( $image['src'] ) ?>" alt="<?php echo $image['alt'] ?>">
                                 </a>
                             <?php endforeach ?>
