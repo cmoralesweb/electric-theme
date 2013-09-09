@@ -301,7 +301,8 @@ function electric_pf_get_attachment( $attachment_id, $size = 'full' ) {
                  'description' => $attachment->post_content,
                  'href' => get_permalink( $attachment->ID ),
                  'src' => $attachment_img[0],
-                 'title' => $attachment->post_title
+                 'title' => $attachment->post_title,
+                 'attachment_id' => $attachment_id
                  );
 }
 ?>

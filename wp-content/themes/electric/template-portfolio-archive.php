@@ -70,7 +70,7 @@
         wp_reset_postdata();
         ?>
 
-        <?php if (current_user_can('edit_post')): ?>
+        <?php if (current_user_can('edit_post', get_the_ID())): ?>
         <div class="entry-meta">
             <?php edit_post_link(__('Edit', 'electric'), '<span class="edit-link">', '</span>'); ?>
         </div>

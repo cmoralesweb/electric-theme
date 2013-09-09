@@ -67,9 +67,7 @@ function electric_setup() {
         add_image_size('home-featured', 902, 400, true); // Featured post in the home page
         add_image_size('home-featured-thumb', 180, 80, true); // Thumbnail for featured post in the home page
         add_image_size('post-thumb', 333, 148, true); // Regular post thumb
-        add_image_size('portfolio-thumb', 300, 200, true); // Portfolio type thumb
-//    add_image_size('cv', 325, 460); // Imagen de CV
-//    add_image_size('cv-thumb', 210, 297); // Miniatura de CV
+        add_image_size('portfolio-thumb', 250, 167, true); // Portfolio type thumb
 
         /**
          * Enable support for Infinite Scroll

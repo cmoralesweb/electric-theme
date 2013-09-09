@@ -615,7 +615,7 @@ textarea, .success-message,
 #colophon .widget-title, .single .thumbnail, .comments-link, .blog .with-thumb .entry-header .entry-meta .thumbnail,
 .archive .with-thumb .entry-header .entry-meta .thumbnail, .entry-content img,
 .thumbnail img, #specialties img, .single-electric_portfolio .thumbnail,
-.page-template-template-portfolio-archive-php .thumbnail, .aktt_tweet .entry-content, .aktt_tweet .thumbnail {
+.page-template-template-portfolio-archive-php .thumbnail, .single-electric_portfolio .gallery a, .single-electric_portfolio .gallery img, .aktt_tweet .entry-content, .aktt_tweet .thumbnail {
   border-radius: 15px;
 }
 
@@ -743,7 +743,7 @@ input[type="submit"],
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_placeholders\.scss}line{font-family:\0000368}}
 .single .thumbnail, .blog .with-thumb .entry-header .entry-meta .thumbnail,
 .archive .with-thumb .entry-header .entry-meta .thumbnail, .framed, .portfolio-showcase .portfolio-image, #specialties img, .single-electric_portfolio .thumbnail,
-.page-template-template-portfolio-archive-php .thumbnail, .aktt_tweet .thumbnail {
+.page-template-template-portfolio-archive-php .thumbnail, .single-electric_portfolio .gallery a, .aktt_tweet .thumbnail {
   /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
   -webkit-box-shadow: 0 0 0 9px white, 0 0 0 1px #cccccc, 0 2px 2px 9px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0 9px white, 0 0 0 1px #cccccc, 0 2px 2px 9px rgba(0, 0, 0, 0.5);
@@ -796,7 +796,7 @@ input[type="submit"],
 .entry-header .entry-date, .comments-link, .blog .with-thumb .entry-header .entry-meta .more,
 .archive .with-thumb .entry-header .entry-meta .more, .wp-caption,
 .entry-attachment, .widgetarea-container .widget-title,
-.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .aktt_tweet .thumbnail-wrapper, .flex-control-nav, .tooltip-container {
+.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .single-electric_portfolio .entry-header, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .aktt_tweet .thumbnail-wrapper, .flex-control-nav, .tooltip-container {
   text-align: center;
 }
 
@@ -2485,31 +2485,31 @@ img.size-full {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000340}}
 .site-content .gallery a img {
   border: none;
   height: auto;
   max-width: 85%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000345}}
 .site-content .gallery dd {
   margin: 0;
 }
 
 /* Make sure embeds and iframes fit their containers */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000354}}
 embed,
 iframe,
 object {
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000358}}
 .framed {
   margin: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000370}}
 .wp-caption,
 .entry-attachment {
   max-width: 100%;
@@ -2519,7 +2519,7 @@ object {
   box-shadow: 0 0 0 1px #cccccc, 0 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 1.5% 1%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000379}}
 .wp-caption.aligncenter, #specialties img.wp-caption, .wp-caption.alignleft, .wp-caption.alignright,
 .entry-attachment.aligncenter,
 #specialties img.entry-attachment,
@@ -2527,7 +2527,7 @@ object {
 .entry-attachment.alignright {
   margin-bottom: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000382}}
 .wp-caption img,
 .entry-attachment img {
   display: block;
@@ -2537,7 +2537,7 @@ object {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000389}}
 .wp-caption .wp-caption-text,
 .wp-caption .entry-caption,
 .entry-attachment .wp-caption-text,
@@ -2545,49 +2545,49 @@ object {
   margin: 0.25em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000395}}
 .post a img {
   -webkit-transition: box-shadow 0.25s;
   -moz-transition: box-shadow 0.25s;
   -o-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\0000399}}
 .post a img:hover, .post a img:active, .post a img:focus {
   -webkit-box-shadow: 0 0 0 5px #3c82c0, 0 0 0 1px #cccccc, 0 2px 5px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0 5px #3c82c0, 0 0 0 1px #cccccc, 0 2px 5px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0 5px #3c82c0, 0 0 0 1px #cccccc, 0 2px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003106}}
 .avatar {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003112}}
 #wp-admin-bar-my-account .avatar {
   border-radius: 0;
 }
 
 /* Media object  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003120}}
 .media, .media .media {
   margin-top: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003125}}
 .media:first-child {
   margin-top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003130}}
 .media, .media-body {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_media\.scss}line{font-family:\00003134}}
 .media-object, .twitter-avatar {
   display: block;
   max-width: none !important;
@@ -3085,30 +3085,61 @@ object {
 /***      =Portafolio         ***/
 /*******************************/
 /*******************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000316}}
+.single-electric_portfolio .hentry {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/\.rvm\/gems\/ruby-1\.9\.3-p194\@carlos\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.single-electric_portfolio .hentry:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (min-width: 58.4375em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000319}}
-  .single-electric_portfolio .entry-content,
-  .single-electric_portfolio .images,
-  .single-electric_portfolio .entry-meta,
-  .single-electric_portfolio #comments {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000320}}
+  .single-electric_portfolio .entry-content-wrapper,
+  .single-electric_portfolio .images {
     width: 48.57143%;
     float: left;
     margin-right: 2.85714%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000327}}
-.single-electric_portfolio .entry-content,
-.single-electric_portfolio .entry-meta,
-.single-electric_portfolio #comments {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000325}}
+.single-electric_portfolio .entry-content-wrapper {
   float: right;
-  clear: right;
+  margin-right: 0;
+  #margin-left: -2em;
+  display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000329}}
 .single-electric_portfolio .images {
   margin-top: 1.64706em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000335}}
+.single-electric_portfolio .about-job {
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000339}}
+.single-electric_portfolio .gallery a {
+  display: inline-block;
+  margin-bottom: 1.64706em;
+  -webkit-transition: box-shadow 0.25s;
+  -moz-transition: box-shadow 0.25s;
+  -o-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000345}}
+.single-electric_portfolio .gallery a:nth-child(odd) {
+  margin-right: 55px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000350}}
+.single-electric_portfolio .gallery a:hover, .single-electric_portfolio .gallery a:focus, .single-electric_portfolio .gallery a:active {
+  -webkit-box-shadow: 0 0 0 7px #3c82c0, 0 0 0 1px #cccccc, 0 2px 7px 7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 0 7px #3c82c0, 0 0 0 1px #cccccc, 0 2px 7px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 7px #3c82c0, 0 0 0 1px #cccccc, 0 2px 7px 7px rgba(0, 0, 0, 0.5);
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000360}}
 .details {
   border-top: 1px solid white;
   -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.6), 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 3px 1px -1px white;
@@ -3116,20 +3147,20 @@ object {
   box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.6), 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 3px 1px -1px white;
   padding: 0.5em 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000361}}
 .details dt {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000364}}
 .details dl {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000372}}
 .page-template-template-portfolio-archive-php .wp-post-image {
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000375}}
 .page-template-template-portfolio-archive-php .filterable-grid {
   -webkit-transition: width 1s ease-in-out;
   -moz-transition: width 1s ease-in-out;
@@ -3137,20 +3168,20 @@ object {
   transition: width 1s ease-in-out;
 }
 @media screen and (max-width: 1240px) and (min-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000375}}
   .page-template-template-portfolio-archive-php .filterable-grid {
     width: 665px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 799px) and (min-width: 378px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000375}}
   .page-template-template-portfolio-archive-php .filterable-grid {
     width: 330px;
     margin: 0 auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000385}}
 .page-template-template-portfolio-archive-php .filterable-grid li {
   text-align: center;
   margin-bottom: 25px;
@@ -3160,14 +3191,14 @@ object {
   margin-right: 30px;
 }
 @media screen and (max-width: 799px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000385}}
   .page-template-template-portfolio-archive-php .filterable-grid li {
     float: none;
     display: block;
     height: auto;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000399}}
 .page-template-template-portfolio-archive-php .entry-content {
   width: 65.71429%;
   float: right;
@@ -3177,17 +3208,17 @@ object {
   padding-left: 17.14286%;
   padding-right: 17.14286%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003105}}
 .page-template-template-portfolio-archive-php .filter-wrapper {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003110}}
 .page-template-template-portfolio-archive-php .filter-wrapper .filter-title,
 .page-template-template-portfolio-archive-php .filter-wrapper .filter,
 .page-template-template-portfolio-archive-php .filter-wrapper .filter li {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003114}}
 .page-template-template-portfolio-archive-php .filterable-grid {
   margin-top: 0;
   padding-left: 0;
@@ -3200,11 +3231,11 @@ object {
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003120}}
 .page-template-template-portfolio-archive-php .page-title {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mrpotato\/P\%C3\%BAblico\/Proyectos\/electric\/wp-content\/themes\/electric\/sass\/_portfolio\.scss}line{font-family:\00003124}}
 .page-template-template-portfolio-archive-php .portfolio-title {
   color: inherit;
 }

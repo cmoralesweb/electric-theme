@@ -13,23 +13,47 @@
 }
 
 .single-electric_portfolio {
-    .entry-content,
-    .images,
-    .entry-meta,
-    #comments {
+    .hentry {
+        @include pie-clearfix;
+    }
+    .entry-content-wrapper,
+    .images {
         @include at-breakpoint($desktop-layout) {
             @include span-columns(6, 12);
         }
     }
-
-    .entry-content,
-    .entry-meta,
-    #comments{
-        float: right;
-        clear: right;
+    .entry-content-wrapper {
+        @include omega;
     }
+
     .images {
         @include leader;
+    }
+    .entry-header {
+        @extend %txta-center;
+    }
+    .about-job {
+        margin-top: 0;
+    }
+    .gallery {
+        a {
+            @extend %framed;
+            @extend %rounded-corner-med;
+            display: inline-block;
+            @include trailer;
+            @include transition(box-shadow 0.25s);
+            &:nth-child(odd){
+                margin-right: 55px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                @include box-shadow(0 0 0 7px $color2, 0 0 0 1px #CCCCCC, 0 2px 7px 7px rgba(0, 0, 0, 0.5));
+            }
+        }
+        img {
+            @extend %rounded-corner-med;
+        }
     }
 }
 
