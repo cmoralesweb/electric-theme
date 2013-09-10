@@ -1,0 +1,918 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: electric\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-11 00:30+0100\n"
+"PO-Revision-Date: 2013-09-11 00:43+0100\n"
+"Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
+"Language-Team: Carlos Morales <carlos@cmorales.es>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:39
+#: ../comments.php:59
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#: ../comments.php:40
+#: ../comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarios anteriores"
+
+#: ../comments.php:41
+#: ../comments.php:61
+msgid "Newer Comments &rarr;"
+msgstr "Comentarios recientes &rarr;"
+
+#: ../comments.php:71
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados."
+
+#: ../header.php:68
+msgid "Menu"
+msgstr "Menú"
+
+#: ../header.php:70
+msgid "Skip to content"
+msgstr "Ir al contenido"
+
+#: ../template-frontpage.php:45
+msgid "Specialties"
+msgstr "Especialidades"
+
+#: ../functions.php:85
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: ../functions.php:119
+#, php-format
+msgid "You can customize this theme to better suit your neeeds. Please visit the <a href=\"%s\" title=\"Theme Options page\">Theme Options page</a> to adjust it."
+msgstr "Puedes personalizar este tema para que se adapte mejor a tus necesidades. Por favor, visita la página de <a href=\"%s\" title=\"Página de opciones del tema \">opciones del tema</a> para ajustarlo. "
+
+#: ../functions.php:251
+msgid "Install Required Plugins"
+msgstr "Instalar plugins requeridos"
+
+#: ../functions.php:252
+msgid "Install Plugins"
+msgstr "Instalar plugins"
+
+#: ../functions.php:253
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalando plugin: %s"
+
+#: ../functions.php:254
+msgid "Something went wrong with the plugin API."
+msgstr "Ha habido un error con la API de plugins"
+
+#: ../functions.php:265
+msgid "Return to Required Plugins Installer"
+msgstr "Volver al instalador de plugins requeridos"
+
+#: ../functions.php:266
+msgid "Plugin activated successfully."
+msgstr "Plugin activado correctamente."
+
+#: ../functions.php:267
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Todos los plugins han sido instalados y activados correctamente. %s"
+
+#: ../no-results.php:14
+msgid "Nothing Found"
+msgstr "No se han encontrado resultados"
+
+#: ../no-results.php:20
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "¿Listo para publicar tu primer post? <a href=\"%1$s\">Empieza aquí</a>."
+
+#: ../no-results.php:24
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Disculpas, pero no se han encontrado resultados para tus términos de búsqueda. Por favor, inténtalo de nuevo con diferentes palabras clave. "
+
+#: ../no-results.php:29
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no podemos encontrar lo que buscabas. Quizá una búsqueda pueda ayudar."
+
+#: ../image.php:24
+#, php-format
+msgid "Published <time class=\"entry-date\" datetime=\"%1$s\" pubdate>%2$s - %3$s -%4$s</time> at <a href=\"%5$s\" title=\"Link to full-size image\">%6$s &times; %7$s</a> in <a href=\"%8$s\" title=\"Return to %9$s\" rel=\"gallery\">%9$s</a>"
+msgstr "Publicado el  <time class=\"entry-date\" datetime=\"%1$s\" pubdate>%2$s - %3$s -%4$s</time> a las <a href=\"%5$s\" title=\"Enlace a imagen con tamaño completo\">%6$s &times; %7$s</a> en <a href=\"%8$s\" title=\"Volver a %9$s\" rel=\"gallery\">%9$s</a>"
+
+#: ../image.php:36
+#: ../image.php:102
+#: ../template-contact.php:19
+#: ../template-portfolio-archive.php:75
+#: ../content-page.php:18
+#: ../template-about.php:19
+msgid "Edit"
+msgstr "Editar"
+
+#: ../image.php:40
+msgid "&larr; Previous"
+msgstr "&larr; Anterior"
+
+#: ../image.php:41
+msgid "Next &rarr;"
+msgstr "Siguiente &rarr;"
+
+#: ../image.php:88
+#: ../content-page.php:17
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: ../image.php:94
+#, php-format
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Deja un comentario\">Deja un comentario</a> o un  trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL\" rel=\"trackback\">Trackback URL</a>."
+
+#: ../image.php:96
+#, php-format
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Los comentarios están cerrados, pero puedes dejar un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL\" rel=\"trackback\">Trackback URL</a>."
+
+#: ../image.php:98
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Los trackbacks están cerrados, pero puedes <a class=\"comment-link\" href=\"#respond\" title=\"Deja un comentario\">dejar un comentario</a>."
+
+#: ../image.php:100
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Los comentarios y trackbacks están cerrados."
+
+#: ../search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados de la búsqueda por: %s"
+
+#: ../archive.php:22
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Archivo de la categoría: %s"
+
+#: ../archive.php:25
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Archivo de la etiqueta: %s"
+
+#: ../archive.php:32
+#, php-format
+msgid "Author Archives: %s"
+msgstr "Archivo del autor: %s"
+
+#: ../archive.php:40
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Archivo diario: %s"
+
+#: ../archive.php:43
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Archivo mensual: %s"
+
+#: ../archive.php:46
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Archivo anual: %s"
+
+#: ../archive.php:49
+msgid "Archives"
+msgstr "Archivos"
+
+#: ../404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se ha podido encontrar esa página. "
+
+#: ../404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Parece que no se ha podido encontrar nada en esa dirección. ¿Quizá ayude alguno de los enlaces de debajo o una búsqueda?"
+
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr "Categorías más usadas"
+
+#: ../404.php:35
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Intenta buscando en los archivos mensuales. %1$s"
+
+#: ../content-aktt_tweet.php:23
+msgid "Read more "
+msgstr "Seguir leyendo"
+
+#: ../template-portfolio-archive.php:23
+msgid "Filter"
+msgstr "Filtrar"
+
+#: ../template-portfolio-archive.php:25
+msgid "All"
+msgstr "Todos"
+
+#: ../content-single.php:32
+msgid "<span class=\"sep\">,</span> "
+msgstr ""
+
+#: ../content-single.php:39
+#, php-format
+msgid "This entry was posted in %1$s"
+msgstr "Esta entrada fue publicada en %1$s"
+
+#: ../content-single.php:46
+#, php-format
+msgid "Bookmark the <a href=\"%1$s\" title=\"Permalink to %2$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Guarda el <a href=\"%1$s\" title=\"Enlace permanente a %2$s\" rel=\"bookmark\">enlace permanente</a>."
+
+#: ../content-single.php:59
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Ver todos los artículos de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-single.php:77
+msgid "Facebook"
+msgstr ""
+
+#: ../single-electric_portfolio.php:32
+msgid "About this job"
+msgstr "Sobre este trabajo"
+
+#: ../single-electric_portfolio.php:35
+msgid "Client"
+msgstr "Cliente"
+
+#: ../single-electric_portfolio.php:39
+msgid "In partnership with"
+msgstr "En colaboración con"
+
+#: ../single-electric_portfolio.php:47
+msgid "Year"
+msgstr "Año"
+
+#: ../single-electric_portfolio.php:55
+msgid "See other jobs in:"
+msgstr "Ver otros trabajos en:"
+
+#: ../sidebar.php:22
+msgid "Meta"
+msgstr "Meta"
+
+#: ../footer.php:24
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Funciona con %s"
+
+#: ../footer.php:26
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s por %2$s."
+
+#: ../content.php:24
+#: ../content.php:39
+msgid "Continue reading"
+msgstr "Seguir leyendo"
+
+#: ../content.php:49
+msgid "<span class=\"sep\">, </span>"
+msgstr ""
+
+#: ../content.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publicado en %1$s"
+
+#: ../content.php:59
+msgid "<span class=\"sep\">, </span> "
+msgstr ""
+
+#: ../content.php:64
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Etiquetado %1$s"
+
+#: ../content.php:71
+msgid "Leave a comment"
+msgstr "Deja un comentario"
+
+#: ../content.php:71
+msgid "1 Comment"
+msgstr "1 comentario"
+
+#: ../content.php:71
+msgid "% Comments"
+msgstr "% comentarios"
+
+#: ../searchform.php:11
+msgid "Search"
+msgstr "Buscar"
+
+#: ../inc/template-tags.php:38
+msgid "Post navigation"
+msgstr "Navegación de artículos"
+
+#: ../inc/template-tags.php:48
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Artículos anteriores"
+
+#: ../inc/template-tags.php:52
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Artículos recientes <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/template-tags.php:79
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:79
+#: ../inc/template-tags.php:104
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: ../inc/template-tags.php:90
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">dice:</span>"
+
+#: ../inc/template-tags.php:93
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario será revisado por un moderador."
+
+#: ../inc/template-tags.php:101
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s a las %2$s"
+
+#: ../inc/template-tags.php:131
+#, php-format
+msgid "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "Publicado el <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\">por <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: ../inc/template-tags.php:131
+#, php-format
+msgid "View all posts by %s"
+msgstr "Ver todos los artículos de %s"
+
+#: ../inc/template-tags.php:140
+#, php-format
+msgid "<span class=\"posted-on\">Posted on</span> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate><span class=\"date\">%4$s</span><span class=\"sep\">-</span><span class=\"month\">%5$s</span><span class=\"sep\">-</span><span class=\"year\">%6$s</span></time></a>"
+msgstr "<span class=\"posted-on\">Publicado el</span> <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate><span class=\"date\">%4$s</span><span class=\"sep\">-</span><span class=\"month\">%5$s</span><span class=\"sep\">-</span><span class=\"year\">%6$s</span></time></a>"
+
+#: ../inc/template-tags.php:249
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../inc/template-tags.php:271
+#: ../inc/template-tags.php:484
+#, php-format
+msgid "Permalink to %s"
+msgstr "Enlace permanente a %s"
+
+#: ../inc/template-tags.php:307
+msgid "Tags: "
+msgstr "Etiquetas:"
+
+#: ../inc/template-tags.php:312
+msgid "View more posts tagged with: "
+msgstr "Ver más artículos etiquetados con:"
+
+#: ../inc/template-tags.php:440
+msgid "View original in Twitter"
+msgstr "Ver original en Twitter"
+
+#: ../inc/template-tags.php:446
+msgid "In reply to:"
+msgstr "En respuesta a:"
+
+#: ../inc/template-tags.php:479
+msgid "Related articles:"
+msgstr "Artículos relacionados:"
+
+#: ../inc/plugin-activation.php:167
+msgid "Something went wrong."
+msgstr "Ha habido un problema."
+
+#: ../inc/plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos los plugins han sido instalados y activados correctamente. %1$s"
+
+#: ../inc/plugin-activation.php:517
+#: ../inc/plugin-activation.php:2057
+msgid "Return to the Dashboard"
+msgstr "Volver al Escritorio"
+
+#: ../inc/plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "El siguiente plugin ha sido activado correctamente: %s."
+
+#: ../inc/plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: ../inc/plugin-activation.php:1090
+msgid "External Link"
+msgstr "Link externo"
+
+#: ../inc/plugin-activation.php:1095
+msgid "Private Repository"
+msgstr "Repositorio privado"
+
+#: ../inc/plugin-activation.php:1098
+msgid "Pre-Packaged"
+msgstr "Pre-empaquetado"
+
+#: ../inc/plugin-activation.php:1102
+msgid "WordPress Repository"
+msgstr "Repositorio de WordPress"
+
+#: ../inc/plugin-activation.php:1105
+msgid "Required"
+msgstr "Requerido"
+
+#: ../inc/plugin-activation.php:1105
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: ../inc/plugin-activation.php:1108
+msgid "Not Installed"
+msgstr "No instalado"
+
+#: ../inc/plugin-activation.php:1110
+msgid "Installed But Not Activated"
+msgstr "Instalado pero no activado"
+
+#: ../inc/plugin-activation.php:1280
+#, php-format
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr "No hay plugins que instalar o activar.  <a href=\"%1$s\" title=\"Volver al escritorio\">Volver al escritorio</a>"
+
+#: ../inc/plugin-activation.php:1296
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../inc/plugin-activation.php:1297
+msgid "Source"
+msgstr "Origen"
+
+#: ../inc/plugin-activation.php:1298
+msgid "Type"
+msgstr "Tipo"
+
+#: ../inc/plugin-activation.php:1299
+msgid "Status"
+msgstr "Estado"
+
+#: ../inc/plugin-activation.php:1317
+msgid "Install"
+msgstr "Instalar"
+
+#: ../inc/plugin-activation.php:1318
+msgid "Activate"
+msgstr "Activar"
+
+#: ../inc/plugin-activation.php:1828
+msgid "Install package not available."
+msgstr "Paquete de instalación no disponible."
+
+#: ../inc/plugin-activation.php:1829
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Descargando el paquete de instalación desde <span class=\"code\">%s</span>&#8230;"
+
+#: ../inc/plugin-activation.php:1830
+msgid "Unpacking the package&#8230;"
+msgstr "Desempaquetando&#8230;"
+
+#: ../inc/plugin-activation.php:1831
+msgid "Installing the plugin&#8230;"
+msgstr "Instalando el plugin&#8230;"
+
+#: ../inc/plugin-activation.php:1832
+msgid "Plugin install failed."
+msgstr "Falló la instalación del Plugin."
+
+#: ../inc/plugin-activation.php:1833
+msgid "Plugin installed successfully."
+msgstr "Plugin instalado correctamente."
+
+#: ../inc/plugin-activation.php:1844
+msgid "Plugin activation failed."
+msgstr "Falló la activación del plugin. "
+
+#: ../inc/plugin-activation.php:1954
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "El proceso de instalación y activación ha comenzado. Este proceso puede tardar un poco en algunos servidores, ten paciencia, por favor. "
+
+#: ../inc/plugin-activation.php:1955
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s instalado y activado correctamente. "
+
+#: ../inc/plugin-activation.php:1955
+#: ../inc/plugin-activation.php:1964
+msgid "Show Details"
+msgstr "Mostrar detalles"
+
+#: ../inc/plugin-activation.php:1955
+#: ../inc/plugin-activation.php:1964
+msgid "Hide Details"
+msgstr "Ocultar detalles"
+
+#: ../inc/plugin-activation.php:1956
+msgid "All installations and activations have been completed."
+msgstr "Todas las instalaciones y activaciones han sido completadas."
+
+#: ../inc/plugin-activation.php:1957
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalando y activando el plugin  %1$s (%2$d/%3$d)"
+
+#: ../inc/plugin-activation.php:1961
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "El proceso de instalación  ha comenzado. Este proceso puede tardar un poco en algunos servidores, ten paciencia, por favor."
+
+#: ../inc/plugin-activation.php:1962
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Ha ocurrido un error al instalar %1$s: <strong>%2$s</strong>."
+
+#: ../inc/plugin-activation.php:1963
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "La instalación de  %1$s  ha fallado. "
+
+#: ../inc/plugin-activation.php:1964
+#, php-format
+msgid "%1$s installed successfully."
+msgstr " %1$s instalado correctamente. "
+
+#: ../inc/plugin-activation.php:1965
+msgid "All installations have been completed."
+msgstr "Se han completado todas las instalaciones. "
+
+#: ../inc/plugin-activation.php:1966
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalando plugin %1$s (%2$d/%3$d)"
+
+#: ../inc/widget-areas.php:11
+msgid "Main sidebar"
+msgstr "Sidebar principal"
+
+#: ../inc/widget-areas.php:12
+msgid "The main sidebar for the blog"
+msgstr "Sidebar principal del blog"
+
+#: ../inc/widget-areas.php:21
+msgid "Secondary sidebar"
+msgstr "Sidebar secundaria"
+
+#: ../inc/widget-areas.php:22
+msgid "Auxiliary sidebar for the blog,  hidden for mobile, ideally for advertising"
+msgstr "Sidebar auxiliar para el blog, oculta para móviles, buena opción para publicidad"
+
+#: ../inc/widget-areas.php:31
+msgid "Top area 1"
+msgstr "Área superior 1"
+
+#: ../inc/widget-areas.php:33
+msgid "A widget area in your header"
+msgstr "Área de widgets en la cabecera"
+
+#: ../inc/widget-areas.php:41
+msgid "Top area 2"
+msgstr "Área superior 2"
+
+#: ../inc/widget-areas.php:43
+msgid "A second widget area in your header"
+msgstr "Segunda zona de widgets en la cabecera"
+
+#: ../inc/widget-areas.php:51
+msgid "Footer area One"
+msgstr "Área de widgets en el footer 1"
+
+#: ../inc/widget-areas.php:53
+#: ../inc/widget-areas.php:63
+#: ../inc/widget-areas.php:73
+msgid "An optional widget area for your site footer"
+msgstr "Área de widgets opcional para el footer"
+
+#: ../inc/widget-areas.php:61
+msgid "Footer area two"
+msgstr "Área de widgets en el footer 2"
+
+#: ../inc/widget-areas.php:71
+msgid "Footer area three"
+msgstr "Área de widgets en el footer 3"
+
+#: ../inc/widget-areas.php:81
+msgid "Home showcase 1"
+msgstr "Destacada en inicio 1"
+
+#: ../inc/widget-areas.php:82
+#: ../inc/widget-areas.php:92
+msgid "Big showcase space at the front page"
+msgstr "Gran zona destacada de widgets en el inicio"
+
+#: ../inc/widget-areas.php:91
+msgid "Home showcase 2"
+msgstr "Destacada en inicio 2"
+
+#: ../inc/widget-areas.php:101
+msgid "Home middle 1"
+msgstr "Intermedia en inicio 1"
+
+#: ../inc/widget-areas.php:102
+msgid "Widget area in the front page, below the showcase, 1"
+msgstr "Zona de widgets en el inicio, debajo de la zona destacada, 1"
+
+#: ../inc/widget-areas.php:111
+msgid "Home middle 2"
+msgstr "Intermedia en inicio 2"
+
+#: ../inc/widget-areas.php:112
+msgid "Widget area in the front page, below the showcase, 2"
+msgstr "Zona de widgets en el inicio, debajo de la zona destacada, 2"
+
+#: ../inc/widget-areas.php:121
+msgid "Home middle 3"
+msgstr "Intermedia en inicio 3"
+
+#: ../inc/widget-areas.php:122
+msgid "Widget area in the front page, below the showcase, 3"
+msgstr "Zona de widgets en el inicio, debajo de la zona destacada, 3"
+
+#: ../inc/widget-areas.php:131
+msgid "Home bottom 1"
+msgstr "Inicio inferior 1"
+
+#: ../inc/widget-areas.php:132
+msgid "Widget area in the front page, over the footer, 1"
+msgstr "Zona de widgets en el inicio, sobre el footer, 1"
+
+#: ../inc/widget-areas.php:141
+msgid "Home bottom 2"
+msgstr "Inicio inferior 2"
+
+#: ../inc/widget-areas.php:142
+msgid "Widget area in the front page, over the footer, 2"
+msgstr "Zona de widgets en el inicio, sobre el footer, 2"
+
+#: ../inc/widget-areas.php:151
+msgid "Home bottom 3"
+msgstr "Inicio inferior 3"
+
+#: ../inc/widget-areas.php:152
+msgid "Widget area in the front page, over the footer, 3"
+msgstr "Zona de widgets en el inicio, sobre el footer, 3"
+
+#: ../inc/widget-areas.php:161
+msgid "About aside"
+msgstr "Sidebar Acerca de"
+
+#: ../inc/widget-areas.php:162
+msgid "Widget area in the about template"
+msgstr "Sidebar de la plantilla \"About\" (acerca de)"
+
+#: ../inc/widget-areas.php:171
+msgid "Contact Sidebar"
+msgstr "Sidebar Contacto"
+
+#: ../inc/widget-areas.php:172
+msgid "Widget area in the contact template"
+msgstr "Sidebar de la plantilla \"Contacto\""
+
+#: ../inc/extras.php:81
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../inc/extras.php:169
+msgid "You can add a nice, longer subtitle to your entries:"
+msgstr "Puedes añadir un subtítulo más largo y bonito a tus entradas:"
+
+#: ../inc/extras.php:171
+#: ../inc/extras.php:186
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: ../inc/theme-options/header.php:10
+msgid "Your catchy tagline"
+msgstr "Tu genial frase de introducción"
+
+#: ../inc/theme-options/header.php:12
+msgid "This will display in the header. If you leave it blank, WP description will be used"
+msgstr "Esto aparecerá en la cabecera. Si lo dejas en blanco, se usará la descripción de WordPress "
+
+#: ../inc/theme-options/header.php:25
+msgid "Check this if you want to use an image as your logo."
+msgstr "Marca esto si quieres usar una imagen como logo."
+
+#: ../inc/theme-options/header.php:38
+msgid "Your custom title"
+msgstr "Tu título personalizado"
+
+#: ../inc/theme-options/header.php:40
+msgid "Insert your custom title to appear in the header. If you leave it blank, your default blog title will be used instead."
+msgstr "Introduce tu título personalizado para que aparezca en la cabecera. Si lo dejas en blanco, se usará en su lugar el título de tu blog."
+
+#: ../inc/theme-options/header.php:51
+msgid "Upload Logo"
+msgstr "Cargar logo"
+
+#: ../inc/theme-options/header.php:54
+msgid "Delete Logo"
+msgstr "Borrar logo"
+
+#: ../inc/theme-options/header.php:56
+msgid "Upload an image as your logo."
+msgstr "Cargar una imagen como logo"
+
+#: ../inc/theme-options/notifications.php:10
+msgid "Insert your text for the notification. Leave blank to hide it"
+msgstr "Introduce tu texto de notificación. Déjalo en blanco para ocultarlo"
+
+#: ../inc/theme-options/general.php:10
+msgid "Check this if you use a widget to display your ephemera posts (status, aside, etc) and want to remove them from the main content"
+msgstr "Marca esto si usas un widget para mostrar tus artículos breves (estatus, minientrada, enlace, cita...) y/o quieres ocultarlos de tu contenido principal"
+
+#: ../inc/theme-options/general.php:24
+msgid "Check this if you want to use a cache buster"
+msgstr "Marca esto si usas un \"cache buster\""
+
+#: ../inc/theme-options/general.php:26
+msgid "If you cache your CSS and JS files (which you should) you can use a \"cache buster\" (a number added at the end of the resource URL) to force browsers to download the new version when you make a change to those files."
+msgstr "Si usas cache para tus archivos CSS y JavaScript (cosa que deberías hacer) puedes usar un  \"cache buster\" (un número añadido al final de la URL del archivo) para forzar a los navegadores a descargar una nueva versión cuando hagas cambios en dichos archivos."
+
+#: ../inc/theme-options/general.php:37
+msgid "Cache buster value (number)"
+msgstr "Valor de cache buster (número)"
+
+#: ../inc/theme-options/general.php:49
+msgid "Your account code"
+msgstr "El código de tu cuenta"
+
+#: ../inc/theme-options/general.php:50
+msgid "Your account code looks like this: UA-12345678-9"
+msgstr "Tu código es algo como esto: UA-12345678-9"
+
+#: ../inc/theme-options/general.php:51
+msgid "Leave blank not to use Google Analytics"
+msgstr "Déjalo en blanco para no usar Google Analytics"
+
+#: ../inc/theme-options/theme-options.php:64
+msgid "Exclude asides from Loop?"
+msgstr "¿Excluir breves del Loop?"
+
+#: ../inc/theme-options/theme-options.php:71
+msgid "Use cache buster?"
+msgstr "¿Usar cache buster?"
+
+#: ../inc/theme-options/theme-options.php:72
+msgid "Cache buster value"
+msgstr "Valor de cache buster"
+
+#: ../inc/theme-options/theme-options.php:73
+msgid "Google Analytics code"
+msgstr "Cógido de Google Analytics"
+
+#: ../inc/theme-options/theme-options.php:76
+msgid "Use image for logo?"
+msgstr "¿Usar imagen como logo?"
+
+#: ../inc/theme-options/theme-options.php:77
+msgid "Your logo"
+msgstr "Tu logo"
+
+#: ../inc/theme-options/theme-options.php:78
+msgid "Preview your logo"
+msgstr "Previsualiza tu logo"
+
+#: ../inc/theme-options/theme-options.php:79
+msgid "Custom title"
+msgstr "Título personalizado"
+
+#: ../inc/theme-options/theme-options.php:80
+msgid "Tagline"
+msgstr "Frase de introducción"
+
+#: ../inc/theme-options/theme-options.php:84
+msgid "Use Icon Fonts?"
+msgstr "¿Usar fuente de iconos?"
+
+#: ../inc/theme-options/theme-options.php:85
+msgid "Use Google Fonts?"
+msgstr "¿Usar fuentes de Google Fonts?"
+
+#: ../inc/theme-options/theme-options.php:86
+msgid "Google Fonts Families"
+msgstr "Familias de Google Fonts"
+
+#: ../inc/theme-options/theme-options.php:87
+msgid "Load Tooltip Script"
+msgstr "Cargar script de Tooltip"
+
+#: ../inc/theme-options/theme-options.php:92
+msgid "Notification text"
+msgstr "Texto de notificación"
+
+#: ../inc/theme-options/theme-options.php:134
+#: ../inc/theme-options/theme-options.php:135
+msgid "Electric Theme Options"
+msgstr "Opciones del tema Electric"
+
+#: ../inc/theme-options/theme-options.php:192
+#, php-format
+msgid "%s Options"
+msgstr "%s Opciones"
+
+#: ../inc/theme-options/theme-options.php:194
+msgid "Customize the Electric Theme"
+msgstr "Personalizar el tema Electric"
+
+#: ../inc/theme-options/theme-options.php:195
+msgid "Thank you for using this theme. Please take a look at the following options and set them according to your needs."
+msgstr "Gracias por usar este tema. Por favor, echa un vistazo a las siguientes opciones para establecerlas conforme a tus necesidades."
+
+#: ../inc/theme-options/theme-options.php:257
+msgid "Cache buster value must be a number"
+msgstr "El \"cache buster\" debe ser un número"
+
+#: ../inc/theme-options/theme-options.php:297
+msgid "Choose your logo"
+msgstr "Elige tu logo"
+
+#: ../inc/theme-options/theme-options.php:298
+msgid "Insert"
+msgstr "Insertar"
+
+#: ../inc/theme-options/theme-options.php:314
+msgid "Use this as my logo"
+msgstr "Usar esto como mi logo"
+
+#: ../inc/theme-options/scripts.php:11
+msgid "You are not forced to use everything that the theme includes. If you are not going to use a feature (because you don't like it or because you prefer a different solution, just uncheck it. You will save some kb to load."
+msgstr "No tienes por qué usar todo lo que incluye este tema. Si no vas a usar una característica (porque no te gusta o porque prefieres una solución diferente), simplemente desmárcalo. Te ahorrarás unos cuantos kb a cargar en tu web."
+
+#: ../inc/theme-options/scripts.php:12
+msgid "If you use these styles/scripts they will be loaded individually. If you want to boost performance, you can combine them into a single file using a plugin (W3 Total Cache is suggested, but you can use any option or do it manually)"
+msgstr "Si usas estos estilos/scripts se cargarán de forma individual. Si quieres mejorar el rendimiento, puedes combinarlos en un único archivo usando un plugin (W3 Total Cache, por ejemplo, pero puedes usar cualquier otra opción o hacerlo manualmente)"
+
+#: ../inc/theme-options/scripts.php:24
+msgid "Check this if you want to use the icon font."
+msgstr "Marca esto si quieres usar la fuente de iconos"
+
+#: ../inc/theme-options/scripts.php:26
+msgid "You can customize the icons uploading the file electric/fonts/fonts/electric.dev.svg to <a href=\"http://icomoon.io\">icomoon.io</a>."
+msgstr "Puedes personalizar los iconos cargando el archivo electric/fonts/fonts/electric.dev.svg a <a href=\"http://icomoon.io\">icomoon.io</a>."
+
+#: ../inc/theme-options/scripts.php:38
+msgid "Check this if you want to use fonts from Google Web Fonts"
+msgstr "Marca esto si quieres usar las fuentes de Google Web Fonts"
+
+#: ../inc/theme-options/scripts.php:40
+msgid "Allows you to use fonts from <a href=\"http://www.google.com/webfonts\">Google Web Fonts</a>"
+msgstr "Te permite usar fuentes desde <a href=\"http://www.google.com/webfonts\">Google Web Fonts</a>"
+
+#: ../inc/theme-options/scripts.php:51
+msgid "Your font family choice"
+msgstr "Tu elección de familias tipográficas"
+
+#: ../inc/theme-options/scripts.php:52
+msgid "If you want to use a different set than the default (Comfortaa + Open Sans):"
+msgstr "Si quieres usar un set diferente del usado por defecto (Comfortaa + Open Sans):"
+
+#: ../inc/theme-options/scripts.php:54
+msgid "Choose the font(s) you like and click \"Use\""
+msgstr "Escoge la(s) fuente(s) que más te gusten y pulsa en \"Use\""
+
+#: ../inc/theme-options/scripts.php:55
+msgid "Choose the style(s) you want and character set(s) at point 1 and 2"
+msgstr "Escoge los estilos que quieras y los sets de caracteres en el punto 1 y 2"
+
+#: ../inc/theme-options/scripts.php:56
+msgid "Copy the code at the \"Standard\" tab at point 3 "
+msgstr "Copia el código en la pestaña \"Standard\""
+
+#: ../inc/theme-options/scripts.php:70
+msgid "Uncheck this if you don't want to load the Tooltip script"
+msgstr "Desmarca esto si no quieres cargar el script del Tooltip"
+
+#: ../inc/theme-options/scripts.php:72
+msgid ""
+"This script is used to display a tooltip in the menus and in the availability widget.\n"
+"    If you don't want them, don't include the plugin and save some kb"
+msgstr ""
+"Este script se usa para mostrar un tooltip en los menús y en el widget de disponibilidad. \n"
+"  Si no quieres usarlos, no incluyas este plugin y ahórrate unos cuantos kb"
+
+#: ../inc/theme-options/scripts.php:74
+msgid "More info about this tooltip <a href=\"http://jquerytools.org/demos/tooltip/index.html\">here</a>"
+msgstr "Más información sobre este tooltip <a href=\"http://jquerytools.org/demos/tooltip/index.html\">aquí</a>"
+

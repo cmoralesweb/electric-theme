@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: electric-availability\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-11 01:22+0100\n"
+"PO-Revision-Date: 2013-09-11 01:28+0100\n"
+"Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
+"Language-Team: Carlos Morales <carlos@cmorales.es>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../widget.php:11
+msgid "A widget to display your availability to accept new jobs"
+msgstr "Un widget para mostrar tu disponibilidad para aceptar nuevos trabajos"
+
+#: ../widget.php:12
+msgid "Electric Availability Widget"
+msgstr "Electric: Widget de disponibilidad"
+
+#: ../widget.php:34
+#: ../electric-availability.php:177
+msgid "Low"
+msgstr "Baja"
+
+#: ../widget.php:38
+#: ../electric-availability.php:181
+msgid "Medium"
+msgstr "Media"
+
+#: ../widget.php:42
+#: ../electric-availability.php:185
+msgid "High"
+msgstr "Alta"
+
+#: ../widget.php:52
+#: ../widget.php:95
+msgid "Availability"
+msgstr "Disponibilidad"
+
+#: ../widget.php:99
+msgid "Title:"
+msgstr "Título"
+
+#: ../electric-availability.php:28
+#: ../electric-availability.php:29
+#: ../electric-availability.php:70
+msgid "Electric Availability Options"
+msgstr "Opciones de Disponibilidad"
+
+#: ../electric-availability.php:53
+msgid "Load icons?"
+msgstr "Cargar iconos?"
+
+#: ../electric-availability.php:54
+msgid "Your availability status"
+msgstr "Tu nivel de disponibilidad"
+
+#: ../electric-availability.php:55
+msgid "Where is the widget going to lead?"
+msgstr "¿A dónde llevará el widget?"
+
+#: ../electric-availability.php:56
+msgid "Low level text"
+msgstr "Texto para disponibilidad baja"
+
+#: ../electric-availability.php:57
+msgid "Medium level text"
+msgstr "Texto para disponibilidad media"
+
+#: ../electric-availability.php:58
+msgid "High level text"
+msgstr "Texto para disponibilidad alta"
+
+#: ../electric-availability.php:71
+msgid "Choose your availability status, the text displayed or whether to load the styles or use your own"
+msgstr "Elige tu nivel de disponibilidad, el texto mostrado y si quieres cargar los estilos o usar uno propio"
+
+#: ../electric-availability.php:93
+msgid "Uncheck if you use your own set of icons (or the ones included with the Electric Theme)"
+msgstr "Desmarca si usas tu propio set de iconos (o los incluidos con el tema Electric)"
+
+#: ../electric-availability.php:163
+msgid "Low = You can't accept new jobs, high = you are free to accept new jobs"
+msgstr "Baja = No puedes aceptar nuevos trabajos, alta = estás libre para aceptar nuevos trabajos"
+

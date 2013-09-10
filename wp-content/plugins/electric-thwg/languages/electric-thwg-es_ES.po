@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: electric-availability\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-11 01:20+0100\n"
+"PO-Revision-Date: 2013-09-11 01:20+0100\n"
+"Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
+"Language-Team: Carlos Morales <carlos@cmorales.es>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../electric-widgets.php:32
+msgid "A widget for your \"short\" content: aside, status, links..."
+msgstr "Un widget para tus \"breves\": estatus, enlaces,..."
+
+#: ../electric-widgets.php:33
+msgid "Electric Ephemera"
+msgstr "Electric Ephemera"
+
+#: ../electric-widgets.php:65
+msgid "Ephemera"
+msgstr "Ephemera"
+
+#: ../electric-widgets.php:109
+#: ../electric-widgets.php:117
+#: ../electric-widgets.php:135
+msgid "0 <span class=\"reply\">comments &rarr;</span>"
+msgstr "0 <span class=\"reply\">comentarios &rarr;</span>"
+
+#: ../electric-widgets.php:109
+#: ../electric-widgets.php:117
+#: ../electric-widgets.php:135
+msgid "1 <span class=\"reply\">comment &rarr;</span>"
+msgstr "1 <span class=\"reply\">comentario &rarr;</span>"
+
+#: ../electric-widgets.php:109
+#: ../electric-widgets.php:117
+#: ../electric-widgets.php:135
+msgid "% <span class=\"reply\">comments &rarr;</span>"
+msgstr "% <span class=\"reply\">comentarios &rarr;</span>"
+
+#: ../electric-widgets.php:186
+#: ../electric-widgets.php:308
+#: ../electric-widgets.php:426
+#: ../electric-widgets.php:518
+msgid "Title:"
+msgstr "Título:"
+
+#: ../electric-widgets.php:189
+#: ../electric-widgets.php:311
+msgid "Number of posts to show:"
+msgstr "Número de artículos a mostrar:"
+
+#: ../electric-widgets.php:203
+msgid "The most recent posts on your site, including their excerpt."
+msgstr "Los artículos más recientes de tu web, incluyendo su extracto."
+
+#: ../electric-widgets.php:204
+msgid "Electric Recent Posts"
+msgstr "Electric: Artículos recientes"
+
+#: ../electric-widgets.php:229
+msgid "Recent Posts"
+msgstr "Artículos recientes"
+
+#: ../electric-widgets.php:269
+#: ../electric-widgets.php:391
+#: ../electric-widgets.php:479
+msgid "Read more "
+msgstr "Seguir leyendo"
+
+#: ../electric-widgets.php:325
+msgid "The most recent comments, including nice avatars."
+msgstr "Los comentarios más recientes, incluyendo los bonitos avatars de tus usuarios."
+
+#: ../electric-widgets.php:326
+msgid "Electric Recent Comments"
+msgstr "Electric: Comentarios recientes"
+
+#: ../electric-widgets.php:358
+msgid "Recent Comments"
+msgstr "Comentarios recientes"
+
+#: ../electric-widgets.php:384
+msgid "in: "
+msgstr "en:"
+
+#: ../electric-widgets.php:399
+msgid "No recent comments"
+msgstr "No hay comentarios recientes"
+
+#: ../electric-widgets.php:429
+msgid "Number of comments to show:"
+msgstr "Número de comentarios a mostrar:"
+
+#: ../electric-widgets.php:521
+msgid "Number of Posts:"
+msgstr "Número de artículos:"
+
+#~ msgid "Shows portfolio works in a slider"
+#~ msgstr "Muestra trabajos del portfolio en un slider"
+
+#~ msgid "Frontpage"
+#~ msgstr "Página de inicio"
+
+#~ msgid "Small widget"
+#~ msgstr "Widget pequeño"
+
+#~ msgid "More about"
+#~ msgstr "Más sobre"
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Widget style"
+#~ msgstr "Estilo del widget"
+
+#~ msgid "Portfolio"
+#~ msgstr "Portafolio"
+
+#~ msgid "All Portfolio items"
+#~ msgstr "Todos los elementos del portafolio"
+
+#~ msgid "Portfolio item"
+#~ msgstr "Elemento del portafolio"
+
+#~ msgid "Add new Portfolio item"
+#~ msgstr "Añadir un nuevo elemento del portafolio"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Edit Portfolio item"
+#~ msgstr "Editar elemento del portafolio"
+
+#~ msgid "New Portfolio item"
+#~ msgstr "Nuevo elemento del portafolio"
+
+#~ msgid "View Portfolio item"
+#~ msgstr "Ver elemento del portafolio"
+
+#~ msgid "Search Portfolio items"
+#~ msgstr "Buscar elementos del portafolio"
+
+#~ msgid "No Portfolio items found"
+#~ msgstr "No se han encontrado elementos del portafolio"
+
+#~ msgid "There are no Portfolio items in the trash"
+#~ msgstr "No hay elementos del portafolio en la papelera"
+
+#~ msgid "portfolio"
+#~ msgstr "portafolio"
+
+#~ msgid "Collection of your best jobs"
+#~ msgstr "Una colección de tus mejores trabajos"
+
+#~ msgid "Portfolio category"
+#~ msgstr "Categoría del portafolio"
+
+#~ msgid "Search by Portfolio category"
+#~ msgstr "Buscar por categoría del portafolio"
+
+#~ msgid "Popular Portfolio categories"
+#~ msgstr "Categorías del portafolio más usadas"
+
+#~ msgid "All Portfolio categories"
+#~ msgstr "Todas las categorías del portafolio"
+
+#~ msgid "Edit Portfolio category"
+#~ msgstr "Editar categoría del portafolio"
+
+#~ msgid "Update Portfolio category"
+#~ msgstr "Actualizar categoría del portafolio"
+
+#~ msgid "Add new Portfolio category"
+#~ msgstr "Añadir nueva categoría del portafolio"
+
+#~ msgid "New Portfolio category"
+#~ msgstr "Nueva categoría del portafolio"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Separar categorías con comas"
+
+#~ msgid "Add or remove Portfolio categories"
+#~ msgstr "Añadir o quitar categorías del portafolio"
+
+#~ msgid "Choose from most used Portfolio categories"
+#~ msgstr "Elegir entre las categorías del portafolio más usadas"
+
+#~ msgid "Categories"
+#~ msgstr "Categorías"
+
+#~ msgid "portfolio/category"
+#~ msgstr "portafolio/categoria"
+
+#~ msgid "Portfolio technology"
+#~ msgstr "Tecnología del portafolio"
+
+#~ msgid "Technology"
+#~ msgstr "Tecnología"
+
+#~ msgid "Popular Portfolio technologies"
+#~ msgstr "Tecnologías más usadas"
+
+#~ msgid "All Portfolio technologies"
+#~ msgstr "Todas las tecnologías"
+
+#~ msgid "Edit Portfolio technology"
+#~ msgstr "Editar tecnología"
+
+#~ msgid "Update Portfolio technology"
+#~ msgstr "Actualizar tecnología"
+
+#~ msgid "Add new Portfolio technology"
+#~ msgstr "Añadir una nueva tecnología"
+
+#~ msgid "New Portfolio technology"
+#~ msgstr "Nueva tecnología"
+
+#~ msgid "Separate items with commas"
+#~ msgstr "Separar elementos con comas"
+
+#~ msgid "Add or remove items"
+#~ msgstr "Añadir o quitar elementos"
+
+#~ msgid "Choose from most used Portfolio technologies"
+#~ msgstr "Elegir entre las tecnologías más usadas"
+
+#~ msgid "Technologies"
+#~ msgstr "Tecnologías"
+
+#~ msgid "portfolio/technology"
+#~ msgstr "portafolio/tecnologia"
+
+#~ msgid "Upload Gallery"
+#~ msgstr "Cargar galería"
+
+#~ msgid "Clear gallery"
+#~ msgstr "Limpair galería"
+
+#~ msgid "Upload a gallery for this element."
+#~ msgstr "Cargar una galería para este elemento."
+
+#~ msgid "Job details"
+#~ msgstr "Detalles del trabajo"
+
+#~ msgid "Gallery"
+#~ msgstr "Galería"
+
+#~ msgid "A widget to display your availability to accept new jobs"
+#~ msgstr ""
+#~ "Un widget para mostrar tu disponibilidad para aceptar nuevos trabajos"
