@@ -73,17 +73,17 @@ function electric_setup() {
          * Enable support for Infinite Scroll
          */
         add_theme_support('infinite-scroll', array(
-            'container' => 'content',
-            'type' => 'click',
-            'render' => 'electric_infinite_scroll_render'
-            ));
+                          'container' => 'content',
+                          'type' => 'click',
+                          'render' => 'electric_infinite_scroll_render'
+                          ));
 
         /**
          * This theme uses wp_nav_menu() in one location.
          */
         register_nav_menus(array(
-            'primary' => __('Primary Menu', 'electric'),
-            ));
+                           'primary' => __('Primary Menu', 'electric'),
+                           ));
 
         /**
          * Add support for the Aside Post Formats
@@ -105,22 +105,22 @@ if (!function_exists('electric_infinite_scroll_render')) :
             }
         }
     }
-endif;
+    endif;
 
-if (!function_exists('electric_thop_options')) :
+    if (!function_exists('electric_thop_options')) :
     /**
      * Show a notice reminding to edit the theme options with a link to the page, only after the theme is activated.
      */
-   function electric_thop_options() {
-     function my_admin_notice(){
-        $options_url = network_admin_url('themes.php?page=theme_options');
+function electric_thop_options() {
+   function my_admin_notice(){
+    $options_url = network_admin_url('themes.php?page=theme_options');
         //network_admin_url works for both single installations and network installations, admin_url only for single
-        ?><div class="updated">
-        <p><?php printf(__('You can customize this theme to better suit your neeeds. Please visit the <a href="%s" title="Theme Options page">Theme Options page</a> to adjust it.', 'electric'), $options_url);?></p>
-        </div>
-        <?php
-    }
-    add_action('admin_notices', 'my_admin_notice');
+    ?><div class="updated">
+    <p><?php printf(__('You can customize this theme to better suit your neeeds. Please visit the <a href="%s" title="Theme Options page">Theme Options page</a> to adjust it.', 'electric'), $options_url);?></p>
+</div>
+<?php
+}
+add_action('admin_notices', 'my_admin_notice');
 }
 endif;
 add_action('after_switch_theme', 'electric_thop_options');
@@ -136,36 +136,40 @@ include('inc/widget-areas.php');
  * Enqueue scripts and styles
  */
 function electric_scripts() {
-    //Check if cache buster is used, false otherwise
- $theme_options = get_option('electric_theme_options');
- $cache = FALSE;
- if(!empty($theme_options['use_cache_buster']) && !empty($theme_options['cache_buster_value'])){
-     $cache = $theme_options['cache_buster_value'];
- }
+//Check if cache buster is used, false otherwise
+   $theme_options = get_option('electric_theme_options');
+   $cache = FALSE;
+   if(!empty($theme_options['use_cache_buster']) && !empty($theme_options['cache_buster_value'])){
+       $cache = $theme_options['cache_buster_value'];
+   }
+
+   //Enqueue Prefix First soon to avoid FOUC
+   wp_enqueue_script('prefixfree', get_template_directory_uri() . '/js/vendor/prefixfree.min.js', array('jquery'), $cache, false);
+
      //Check if Icon Fonts are used
- if(!empty($theme_options['use_icon_fonts']) ){
+   if(!empty($theme_options['use_icon_fonts']) ){
     wp_enqueue_style('electric-theme-font-style', get_template_directory_uri(). '/fonts/style.css', array('electric-theme-style'), $cache);
 }
 
      //Check if Google Fonts are used
 if(!empty($theme_options['use_google_fonts']) ){
- $google_link = "http://fonts.googleapis.com/css?family=";
+   $google_link = "http://fonts.googleapis.com/css?family=";
          preg_match("{family=(.+)'}", $theme_options['google_fonts_choice'], $matches);//Capture the family parameter in $matches[1]
          if(!empty($matches[1])){
-           $google_link .= $matches[1] ;
-           wp_enqueue_style('electric-theme-google-fonts', $google_link, 'electric-theme-style', FALSE);
-       }
-   }
+             $google_link .= $matches[1] ;
+             wp_enqueue_style('electric-theme-google-fonts', $google_link, 'electric-theme-style', FALSE);
+         }
+     }
 
      //Check if the Tooltip script should be loaded
-   if(!empty($theme_options['use_tooltip_js']) ){
-    wp_enqueue_script('electric-theme-use-tooltip-js', get_template_directory_uri() . '/js/jquery-tooltip.js', array('jquery'), $cache, true);
-}
+     if(!empty($theme_options['use_tooltip_js']) ){
+        wp_enqueue_script('electric-theme-use-tooltip-js', get_template_directory_uri() . '/js/jquery-tooltip.js', array('jquery'), $cache, true);
+    }
      ////
 
 
 ///Enqueue resources now
-wp_enqueue_style('electric-theme-style', get_stylesheet_uri(), FALSE, $cache);
+    wp_enqueue_style('electric-theme-style', get_stylesheet_uri(), FALSE, $cache);
     wp_enqueue_script('electric-theme-modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js', FALSE, $cache, FALSE); //This must load as soon as possible
     wp_enqueue_script('electric-theme-plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery'), $cache, true);
     wp_enqueue_script('electric-theme-main', get_template_directory_uri() . '/js/main.js', array('jquery'), $cache, true);
@@ -201,7 +205,7 @@ function electric_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-        array(
+                     array(
             'name'                  => 'Electric Portfolio', // The plugin name
             'slug'                  => 'electric-portfolio', // The plugin slug (typically the folder name)
             'source'                => get_template_directory() . '/lib/plugins/electric-portfolio.zip', // The plugin source
@@ -210,8 +214,8 @@ function electric_register_required_plugins() {
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'          => '', // If set, overrides default API URL and points to an external URL
-          ),
-        array(
+            ),
+                     array(
             'name'                  => 'Electric Availability', // The plugin name
             'slug'                  => 'electric-availability', // The plugin slug (typically the folder name)
             'source'                => get_template_directory() . '/lib/plugins/electric-availability.zip', // The plugin source
@@ -220,8 +224,8 @@ function electric_register_required_plugins() {
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'          => '', // If set, overrides default API URL and points to an external URL
-          ),
-		array(
+            ),
+                     array(
 			'name'     				=> 'Electric Theme Widgets', // The plugin name
 			'slug'     				=> 'electric-thwg', // The plugin slug (typically the folder name)
 			'source'   				=> get_template_directory() . '/lib/plugins/electric-thwg.zip', // The plugin source
@@ -232,18 +236,18 @@ function electric_register_required_plugins() {
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
           ),
 		// Plugin from the WordPress Plugin Repository
-		array(
-            'name'      => 'Jetpack',
-            'slug'      => 'jetpack',
-            'required'  => false,
-            ),
-        array(
-           'name' 		=> 'Twitter Tools',
-           'slug' 		=> 'twitter-tools',
-           'required' 	=> false,
-           ),
+                     array(
+                           'name'      => 'Jetpack',
+                           'slug'      => 'jetpack',
+                           'required'  => false,
+                           ),
+                     array(
+                           'name' 		=> 'Twitter Tools',
+                           'slug' 		=> 'twitter-tools',
+                           'required' 	=> false,
+                           ),
 
-        );
+                     );
 
 $theme_text_domain = 'electric';
 
@@ -260,8 +264,8 @@ $theme_text_domain = 'electric';
 		'is_automatic'    	=> false,					   	// Automatically activate plugins after installation or not
 		'message' 			=> '',							// Message to output right before the plugins table
 		'strings'      		=> array(
-			'page_title'                       			=> __( 'Install Required Plugins', $theme_text_domain ),
-			'menu_title'                       			=> __( 'Install Plugins', $theme_text_domain ),
+                               'page_title'                       			=> __( 'Install Required Plugins', $theme_text_domain ),
+                               'menu_title'                       			=> __( 'Install Plugins', $theme_text_domain ),
 			'installing'                       			=> __( 'Installing Plugin: %s', $theme_text_domain ), // %1$s = plugin name
 			'oops'                             			=> __( 'Something went wrong with the plugin API.', $theme_text_domain ),
 			'notice_can_install_required'     			=> _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s)

@@ -23,12 +23,13 @@ img.size-full {
     max-width: 100%;
     width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
-.entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
+img.wp-smiley,
+img.wp-smiley {
     border: none;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0;
+    width: auto!important;
 }
 
 
@@ -71,7 +72,7 @@ object {
     max-width: 100%;
     @extend %txta-center;
     background: white;
-    @include box-shadow(0 0 0 1px #CCC, 0 1px 1px 1px rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 0 1px #CCC, 0 1px 1px 1px rgba(0, 0, 0, 0.5);
     @extend %rounded-corner-big;
     padding: 1.5% 1%;
     &.aligncenter,
@@ -83,7 +84,7 @@ object {
         display: block;
         margin: 0 auto;
         max-width: 98%;
-         @include box-shadow(none); //Avoid double border
+        box-shadow: none; //Avoid double border
      }
      .wp-caption-text,
      .entry-caption {
@@ -93,11 +94,11 @@ object {
 
 .post a{
     img {
-        @include transition(box-shadow 0.25s);
+        transition: box-shadow 0.25s;
         &:hover,
         &:active,
         &:focus {
-            @include box-shadow(0 0 0 5px $color2, 0 0 0 1px #CCCCCC, 0 2px 5px 5px rgba(0, 0, 0, 0.5));
+            box-shadow: 0 0 0 5px $color2, 0 0 0 1px #CCCCCC, 0 2px 5px 5px rgba(0, 0, 0, 0.5);
         }
     }
 }
@@ -105,7 +106,7 @@ object {
 
 .avatar {
     @extend %rounded-corner-sml;
-    @include box-shadow(0 1px 1px rgba(black, 0.5));
+    box-shadow: 0 1px 1px rgba(black, 0.5);
 }
 
 #wp-admin-bar-my-account {

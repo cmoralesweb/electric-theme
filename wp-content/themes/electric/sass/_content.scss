@@ -142,7 +142,6 @@ footer.entry-meta {
         @extend %blackbg-blueinset;
     }
     .comments-link {
-        -webkit-animation: (shadow-blink 2s ease-in-out infinite alternate);
         animation: (shadow-blink 2s ease-in-out infinite alternate);
         &:hover,
         &:focus,
@@ -249,7 +248,7 @@ footer.entry-meta {
                     @extend %framed;
                     @extend %rounded-corner-med;
                     left: 0%;
-                    @include transition(left 1s);
+                    transition: left 1s;
                     z-index: 200;
                 }
                 .meta {

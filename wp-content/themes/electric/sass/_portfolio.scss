@@ -41,14 +41,14 @@
             @extend %rounded-corner-med;
             display: inline-block;
             @include trailer;
-            @include transition(box-shadow 0.25s);
+            transition: box-shadow 0.25s;
             &:nth-child(odd){
                 margin-right: 55px;
             }
             &:hover,
             &:focus,
             &:active {
-                @include box-shadow(0 0 0 7px $color2, 0 0 0 1px #CCCCCC, 0 2px 7px 7px rgba(0, 0, 0, 0.5));
+                box-shadow: 0 0 0 7px $color2, 0 0 0 1px #CCCCCC, 0 2px 7px 7px rgba(0, 0, 0, 0.5);
             }
         }
         img {
@@ -73,7 +73,7 @@
         border: 0;
     }
     .filterable-grid {
-        @include transition(width 1s ease-in-out);
+        transition: width 1s ease-in-out;
         @media screen and (max-width: 1240px) and (min-width: 800px){
             width: 665px;
             margin: 0 auto;

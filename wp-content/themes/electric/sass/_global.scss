@@ -33,11 +33,11 @@ body{
 #page {
     @include container();
     background: white;
-    @include background-image(linear-gradient(white, $gray2 20%, $gray2));
+    background-image: linear-gradient(white, $gray2 20%, $gray2);
     @include at-breakpoint($tablet-layout) {
         padding: 5px;
         border: 1px solid #e7e7e7;
-        @include box-shadow (0 8px 12px rgba(128, 128, 128, 0.63));
+        box-shadow: 0 8px 12px rgba(128, 128, 128, 0.63);
         border-radius: 50px;
     }
     @include at-breakpoint($desktop-layout) {
@@ -50,7 +50,7 @@ body{
 
 #page,
 #colophon {
-    @include transition(padding 1s ease-in-out, border-radius 1s ease-in-out);
+    transition: padding 1s ease-in-out, border-radius 1s ease-in-out;
 }
 
 #main {
@@ -83,7 +83,7 @@ body{
         margin: 0 auto;
         max-width: 6em;
         float: left;
-        @include transitioned-transform(0.25s);
+        transition: transform 0.25s;
     }
     span {
         width: 5em;
@@ -92,7 +92,7 @@ body{
     &:focus,
     &:active {
         img {
-            @include transform(translate(0,-5px));
+            transform: translate(0,-5px);
         }
     }
 }
@@ -208,13 +208,13 @@ body{
     li {
         margin-left: 0;
         border-bottom: 1px solid $color2;
-        @include box-shadow(0 1px 1px -1px rgba($color3,0.5));
+        box-shadow: 0 1px 1px -1px rgba($color3,0.5);
         a {
             display: block;
             padding-left: 1em;
             padding-right: 1em;
             border-bottom: 1px solid $color3;
-            @include transition (background 0.5s, padding 0.5s);
+            transition: background 0.5s, padding 0.5s;
             &:hover,
             &:focus {
                 @extend %color2-gradient;
@@ -342,13 +342,13 @@ body{
 .rotating-icon {
     &:before {
         display: inline-block;
-        @include transitioned-transform(0.75s);
+        transition: transform 0.75s;
     }
     &:hover,
     &:focus,
     &:active {
         &:before {
-            @include transform(rotate(-360deg));
+            transform: rotate(-360deg);
         }
     }
 }
@@ -458,8 +458,8 @@ input[type="submit"],
     @extend %button;
     border: 0;
     &:active {
-        @include box-shadow(0 2px 2px rgba(black, 0.5) inset);
-        @include text-shadow(0px 1px 0 rgba(white, 0.55));
+        box-shadow: 0 2px 2px rgba(black, 0.5) inset;
+        text-shadow: 0px 1px 0 rgba(white, 0.55);
     }
 }
 
@@ -467,23 +467,23 @@ input[type="submit"],
 #commentform #submit,
 .comments-link {
     color: white;
-    @include transition(box-shadow 0.5s);
+    transition: box-shadow 0.5s;
     @extend %contrast-gradient;
-    @include box-shadow(0 1px 1px rgba(black, 0.5) );
+    box-shadow: 0 1px 1px rgba(black, 0.5);
     &:link,
     &:visited {
         color: white;
     }
     &:hover,
     &:focus{
-        @include box-shadow(0 0 3px 3px rgba($contrast, 0.6), 0 -2px 2px rgba(black, 0.2) inset);
+        box-shadow: 0 0 3px 3px rgba($contrast, 0.6), 0 -2px 2px rgba(black, 0.2) inset;
         @extend %contrast2-gradient;
         text-decoration: none;
         color: darken($contrast, 30%);
     }
     &:active {
         @extend %contrast2-gradient-reversed;
-        @include box-shadow(0 1px 1px rgba(black, 0.5) inset);
+        box-shadow: 0 1px 1px rgba(black, 0.5) inset;
         color: darken($contrast, 30%);
     }
 }
@@ -621,14 +621,14 @@ textarea{
     background: black;
     @extend %border-med-color2;
     color: white;
-    @include box-shadow($off-blue-inner-shadow);
+    box-shadow: $off-blue-inner-shadow;
     @extend %rounded-corner-sml;
     padding:  0.2em 0.5em;
-    @include transition (box-shadow 0.5s);
+    transition: box-shadow 0.5s;
     &:hover,
     &:active,
     &:focus {
-        @include box-shadow($color1-brighter-inner-shadow);
+        box-shadow: $color1-brighter-inner-shadow;
     }
     &:focus {
         outline: none;

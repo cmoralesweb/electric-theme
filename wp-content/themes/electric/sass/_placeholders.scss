@@ -20,59 +20,59 @@
 //Colors:
 %light-inset {
     background: $gray2;
-    @include background-image(linear-gradient($gray2 80%, $gray4));
-    @include box-shadow(0 1px 2px rgba(0,0,0,0.5) inset);
+    background-image: linear-gradient($gray2 80%, $gray4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset;
 }
 
 %blackbg-blueinset{
     background: black;
     color: white;
-    @include box-shadow($color1-brighter-inner-shadow);
+    box-shadow: $color1-brighter-inner-shadow;
 }
 
 %color1-gradient {
     background: $color1;
-    @include background-image(linear-gradient($color1, $color1-darker));
+    background-image: linear-gradient($color1, $color1-darker);
 }
 
 %color2-gradient-reversed {
     background: darken($color2, 5%);
-    @include background-image($color2-gradient-reversed);
+    background-image: $color2-gradient-reversed;
 }
 
 %color2-gradient {
     background: $color2;
-    @include background-image($color2-gradient);
+    background-image: $color2-gradient;
 }
 
 %light-gradient {
     background: $gray1;
-    @include background($light-gradient);
+    background: $light-gradient;
 }
 
 %contrast-gradient {
     background: $contrast;
-    @include background-image($contrast-gradient);
+    background-image: $contrast-gradient;
 }
 
 %contrast2-gradient {
    background: $contrast2;
-   @include background-image($contrast2-gradient);
+   background-image: $contrast2-gradient;
 }
 
 %contrast2-gradient-reversed {
    background: lighten($contrast2, 10);
-   @include background-image($contrast-gradient-reversed);
+   background-image: $contrast-gradient-reversed;
 }
 
 %framed {
     /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
-    @include box-shadow(0 0 0 9px white, 0 0 0 1px #CCC, 0 2px 2px 9px rgba(0, 0, 0, 0.5));
+    box-shadow: 0 0 0 9px white, 0 0 0 1px #CCC, 0 2px 2px 9px rgba(0, 0, 0, 0.5);
 }
 
 %framed-small {
     /* Border simulated with box shadow because of a Chrome bug (yes, Chrome has bugs too)*/
-    @include box-shadow(0 0 0 4px white, 0 0 0 1px #CCC, 0 1px 1px 4px rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 0 4px white, 0 0 0 1px #CCC, 0 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -112,7 +112,7 @@
         left: 0.5em;
         top: 50%;
         margin-top: -0.5em;
-        @include text-shadow(0 1px 1px rgba(black, 0.5));
+        text-shadow: 0 1px 1px rgba(black, 0.5);
         font-size: 1.5em;
     }
 }
@@ -219,7 +219,6 @@
 
 
 %blink {
-    -webkit-animation: (shadow-blink 1s ease-in-out infinite alternate);
     animation: (shadow-blink 1s ease-in-out infinite alternate);
 }
 
@@ -233,13 +232,13 @@
 
 %main-button {
     @extend %light-gradient;
-    @include box-shadow(0 0 2px 3px rgba($color1-brighter, 0), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.3) inset, 0 3px 3px #FFFFFF inset);
-    @include transition(box-shadow 0.5s);
+    box-shadow: 0 0 2px 3px rgba($color1-brighter, 0), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.3) inset, 0 3px 3px #FFFFFF inset;
+    transition: box-shadow 0.5s;
     color: $color2;
     margin: 0.15em;
     &:hover,
     &:focus{
-        @include box-shadow(0 0 2px 3px rgba($color1-brighter, 0.9), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.1) inset, 0 3px 3px #FFFFFF inset);
+        box-shadow: 0 0 2px 3px rgba($color1-brighter, 0.9), 0 -2px 2px rgba(black, 0.2) inset, 0 0px 1px 1px rgba(100, 100, 100, 0.1) inset, 0 3px 3px #FFFFFF inset;
         color: $color1;
     }
     &:active {

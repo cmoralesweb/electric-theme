@@ -70,17 +70,16 @@
             & > a {
                 @extend %color2-gradient;
                 color: white;
-                @include text-shadow(1px 1px 2px rgba($color1, 0.55));
+                text-shadow: 1px 1px 2px rgba($color1, 0.55);
                 &:active {
                     @extend %color2-gradient-reversed;
-                    @include text-shadow(0px 1px 0 rgba(white, 0.55));
+                    text-shadow: 0px 1px 0 rgba(white, 0.55);
                     color: $color3;
                     @extend %border-med-color2;
                 }
             }
             & > ul {
                 display: block;
-                -webkit-animation: (fade-in 0.5s);
                 animation: (fade-in 0.5s);
             }
         }
@@ -88,21 +87,20 @@
         // &.current_page_parent a,
         &.current-menu-item a {
             @extend %blackbg-blueinset;
-            -webkit-animation: (shadow-blink 2s ease-in-out infinite alternate);
             animation: (shadow-blink 2s ease-in-out infinite alternate);
         }
     }
     a {
         @include button(5px 10px, 30px);
         @extend %light-gradient;
-        @include box-shadow(0 -3px 3px rgba(black, 0.2) inset, 0 2px 4px rgba(black, 0.2));
+        box-shadow: 0 -3px 3px rgba(black, 0.2) inset, 0 2px 4px rgba(black, 0.2);
         color: $color2;
         font-weight: bold;
         min-width: 3em;
         &:hover,
         &:active,
         &:focus {
-            @include box-shadow(none);
+            box-shadow: none;
         }
     }
     .menu-item-home {
@@ -122,13 +120,13 @@
             vertical-align: middle;
             margin-left: 0.25em;
             display: inline-block;
-            @include transition(transform 0.25s);
+            transition: transform 0.25s;
         }
         &:hover,
         &:focus,
         &:active {
             &:after{
-                @include transform(rotate(-180deg));
+                transform: rotate(-180deg);
             }
         }
     }
@@ -139,7 +137,7 @@
     cursor: pointer;
     padding: 0.25em 0.5em 0.25em 1.4em;
     color: white;
-    @include text-shadow(0 -2px 2px rgba(black, 0.5));
+    text-shadow: 0 -2px 2px rgba(black, 0.5);
     margin-top: 0;
 }
 
@@ -155,7 +153,6 @@
         display: none;
         &.activated {
             display: block;
-            -webkit-animation: (fade-in 0.5s);
             animation: (fade-in 0.5s);
         }
         a {
@@ -163,8 +160,8 @@
             padding-left: 2em;
             color: white;
             border-bottom: 1px solid $color3;
-            @include box-shadow(0 1px 1px -1px rgba($color3,0.5));
-            @include transition (background 0.5s);
+            box-shadow: 0 1px 1px -1px rgba($color3,0.5);
+            transition: background 0.5s;
             &:hover,
             &:focus {
                 @extend %color2-gradient;
@@ -184,7 +181,6 @@
             &.current_page_parent a,
             &.current-menu-item a {
                 @extend %blackbg-blueinset;
-                -webkit-animation: (shadow-blink 1.5s ease-in-out infinite alternate);
                 animation: (shadow-blink 1.5s ease-in-out infinite alternate);
             }
         }
