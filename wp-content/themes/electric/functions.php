@@ -201,30 +201,42 @@ function electric_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
-		// This is an example of how to include a plugin pre-packaged with a theme
+        array(
+            'name'                  => 'Electric Portfolio', // The plugin name
+            'slug'                  => 'electric-portfolio', // The plugin slug (typically the folder name)
+            'source'                => get_template_directory() . '/lib/plugins/electric-portfolio.zip', // The plugin source
+            'required'              => false, // If false, the plugin is only 'recommended' instead of required
+            'version'               => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'          => '', // If set, overrides default API URL and points to an external URL
+          ),
+        array(
+            'name'                  => 'Electric Availability', // The plugin name
+            'slug'                  => 'electric-availability', // The plugin slug (typically the folder name)
+            'source'                => get_template_directory() . '/lib/plugins/electric-availability.zip', // The plugin source
+            'required'              => false, // If false, the plugin is only 'recommended' instead of required
+            'version'               => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'          => '', // If set, overrides default API URL and points to an external URL
+          ),
 		array(
-			'name'     				=> 'TGM Example Plugin', // The plugin name
-			'slug'     				=> 'tgm-example-plugin', // The plugin slug (typically the folder name)
-			'source'   				=> get_stylesheet_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source
-			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+			'name'     				=> 'Electric Theme Widgets', // The plugin name
+			'slug'     				=> 'electric-thwg', // The plugin slug (typically the folder name)
+			'source'   				=> get_template_directory() . '/lib/plugins/electric-thwg.zip', // The plugin source
+			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
           ),
-
 		// Plugin from the WordPress Plugin Repository
 		array(
             'name'      => 'Jetpack',
             'slug'      => 'jetpack',
             'required'  => false,
             ),
-        array(
-           'name'       => 'W3 Total Cache',
-           'slug'       => 'w3-total-cache',
-           'required'   => false,
-           ),
         array(
            'name' 		=> 'Twitter Tools',
            'slug' 		=> 'twitter-tools',
