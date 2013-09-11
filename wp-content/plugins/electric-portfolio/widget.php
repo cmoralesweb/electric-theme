@@ -1,7 +1,7 @@
 <?php
 class Electric_Featured_Works_Widget extends WP_Widget {
 
-    protected $textdomain = "electric_portfolio";
+    protected $textdomain = "electric-portfolio";
     protected $widget_style_options = array();
 
     function Electric_Featured_Works_Widget() {
@@ -9,7 +9,7 @@ class Electric_Featured_Works_Widget extends WP_Widget {
                             'classname' => 'electric-featured-works',
                             'description' => __("Shows portfolio works in a slider", $this->textdomain)
                             );
-        parent::WP_Widget('electric-featured-works', 'Electric Featured Works', $widget_ops);
+        parent::WP_Widget('electric-featured-works', __("Electric Featured Works", $this->textdomain), $widget_ops);
         $this->widget_style_options = array(
                                             'frontpage' => __('Frontpage', $this->textdomain),
                                             'small_widget' => __('Small widget', $this->textdomain)

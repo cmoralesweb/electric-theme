@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: electric-availability\n"
+"Project-Id-Version: Electric Theme Widgets\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-11 01:20+0100\n"
-"PO-Revision-Date: 2013-09-11 01:20+0100\n"
+"POT-Creation-Date: 2013-09-11 14:27+0100\n"
+"PO-Revision-Date: 2013-09-11 14:28+0100\n"
 "Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
 "Language-Team: Carlos Morales <carlos@cmorales.es>\n"
 "Language: \n"
@@ -14,91 +14,95 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../electric-widgets.php:32
+#: ../electric-widgets.php:37
 msgid "A widget for your \"short\" content: aside, status, links..."
 msgstr "Un widget para tus \"breves\": estatus, enlaces,..."
 
-#: ../electric-widgets.php:33
+#: ../electric-widgets.php:38
 msgid "Electric Ephemera"
 msgstr "Electric Ephemera"
 
-#: ../electric-widgets.php:65
+#: ../electric-widgets.php:72
 msgid "Ephemera"
 msgstr "Ephemera"
 
-#: ../electric-widgets.php:109
-#: ../electric-widgets.php:117
-#: ../electric-widgets.php:135
+#: ../electric-widgets.php:116
+#: ../electric-widgets.php:124
+#: ../electric-widgets.php:142
 msgid "0 <span class=\"reply\">comments &rarr;</span>"
 msgstr "0 <span class=\"reply\">comentarios &rarr;</span>"
 
-#: ../electric-widgets.php:109
-#: ../electric-widgets.php:117
-#: ../electric-widgets.php:135
+#: ../electric-widgets.php:116
+#: ../electric-widgets.php:124
+#: ../electric-widgets.php:142
 msgid "1 <span class=\"reply\">comment &rarr;</span>"
 msgstr "1 <span class=\"reply\">comentario &rarr;</span>"
 
-#: ../electric-widgets.php:109
-#: ../electric-widgets.php:117
-#: ../electric-widgets.php:135
+#: ../electric-widgets.php:116
+#: ../electric-widgets.php:124
+#: ../electric-widgets.php:142
 msgid "% <span class=\"reply\">comments &rarr;</span>"
 msgstr "% <span class=\"reply\">comentarios &rarr;</span>"
 
-#: ../electric-widgets.php:186
-#: ../electric-widgets.php:308
-#: ../electric-widgets.php:426
-#: ../electric-widgets.php:518
+#: ../electric-widgets.php:193
+#: ../electric-widgets.php:317
+#: ../electric-widgets.php:437
+#: ../electric-widgets.php:529
 msgid "Title:"
 msgstr "Título:"
 
-#: ../electric-widgets.php:189
-#: ../electric-widgets.php:311
+#: ../electric-widgets.php:196
+#: ../electric-widgets.php:320
 msgid "Number of posts to show:"
 msgstr "Número de artículos a mostrar:"
 
-#: ../electric-widgets.php:203
+#: ../electric-widgets.php:210
 msgid "The most recent posts on your site, including their excerpt."
 msgstr "Los artículos más recientes de tu web, incluyendo su extracto."
 
-#: ../electric-widgets.php:204
+#: ../electric-widgets.php:211
 msgid "Electric Recent Posts"
 msgstr "Electric: Artículos recientes"
 
-#: ../electric-widgets.php:229
+#: ../electric-widgets.php:238
 msgid "Recent Posts"
 msgstr "Artículos recientes"
 
-#: ../electric-widgets.php:269
-#: ../electric-widgets.php:391
-#: ../electric-widgets.php:479
+#: ../electric-widgets.php:278
+#: ../electric-widgets.php:402
+#: ../electric-widgets.php:490
 msgid "Read more "
 msgstr "Seguir leyendo"
 
-#: ../electric-widgets.php:325
+#: ../electric-widgets.php:334
 msgid "The most recent comments, including nice avatars."
 msgstr "Los comentarios más recientes, incluyendo los bonitos avatars de tus usuarios."
 
-#: ../electric-widgets.php:326
+#: ../electric-widgets.php:335
 msgid "Electric Recent Comments"
 msgstr "Electric: Comentarios recientes"
 
-#: ../electric-widgets.php:358
+#: ../electric-widgets.php:369
 msgid "Recent Comments"
 msgstr "Comentarios recientes"
 
-#: ../electric-widgets.php:384
+#: ../electric-widgets.php:395
 msgid "in: "
 msgstr "en:"
 
-#: ../electric-widgets.php:399
+#: ../electric-widgets.php:410
 msgid "No recent comments"
 msgstr "No hay comentarios recientes"
 
-#: ../electric-widgets.php:429
+#: ../electric-widgets.php:440
 msgid "Number of comments to show:"
 msgstr "Número de comentarios a mostrar:"
 
-#: ../electric-widgets.php:521
+#: ../electric-widgets.php:458
+msgid "Displays your tweets as posts, relies on Twitter Tools plugin"
+msgstr "Muestra tus tweets como artículos, depende del plugin Twitter Tools"
+
+#: ../electric-widgets.php:532
 msgid "Number of Posts:"
 msgstr "Número de artículos:"
 
@@ -255,3 +259,6 @@ msgstr "Número de artículos:"
 #~ msgid "A widget to display your availability to accept new jobs"
 #~ msgstr ""
 #~ "Un widget para mostrar tu disponibilidad para aceptar nuevos trabajos"
+
+#~ msgid "Electric Availability Widget"
+#~ msgstr "W"

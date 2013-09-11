@@ -4,8 +4,13 @@
   Description: Widgets for the Electric Theme.
   Author: Carlos Morales
   Author URI: http://www.cmorales.es
-  Version: 0.4
+  Version: 0.5
  */
+
+function electric_thwg_init() {
+    load_plugin_textdomain( 'electric-thwg', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+add_action('plugins_loaded', 'electric_thwg_init');
 
 /*
  * Ephemera widget, based on the one included with TwentyEleven...
@@ -29,13 +34,15 @@ class Electric_Ephemera_Widget extends WP_Widget {
      * @return void
      * */
     function Electric_Ephemera_Widget() {
-        $widget_ops = array('classname' => 'electric-ephemera-widget', 'description' => __('A widget for your "short" content: aside, status, links...', 'electric_thwg'));
-        $this->WP_Widget('electric_ephemera_widget', __('Electric Ephemera', 'electric_thwg'), $widget_ops);
+        $widget_ops = array('classname' => 'electric-ephemera-widget', 'description' => __('A widget for your "short" content: aside, status, links...', 'electric-thwg'));
+        $this->WP_Widget('electric_ephemera_widget', __('Electric Ephemera', 'electric-thwg'), $widget_ops);
         $this->alt_option_name = 'electric_ephemera_widget';
 
         add_action('save_post', array(&$this, 'flush_widget_cache'));
         add_action('deleted_post', array(&$this, 'flush_widget_cache'));
         add_action('switch_theme', array(&$this, 'flush_widget_cache'));
+
+
     }
 
     /**
@@ -62,7 +69,7 @@ class Electric_Ephemera_Widget extends WP_Widget {
         ob_start();
         extract($args, EXTR_SKIP);
 
-        $title = apply_filters('widget_title', empty($instance['title']) ? __('Ephemera', 'electric_thwg') : $instance['title'], $instance, $this->id_base);
+        $title = apply_filters('widget_title', empty($instance['title']) ? __('Ephemera', 'electric-thwg') : $instance['title'], $instance, $this->id_base);
 
         if (!isset($instance['number']))
             $instance['number'] = '5';
@@ -106,15 +113,15 @@ class Electric_Ephemera_Widget extends WP_Widget {
                         <li class="widget-entry-title">
                             <?php the_content(); ?>
                             <p class="comments-link">
-                                <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric_thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric_thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric_thwg')); ?>
+                                <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric-thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric-thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric-thwg')); ?>
                             </p>
                         </li>
 
                     <?php else : ?>
                     <li class="widget-entry-title">
-                        <a href="<?php echo esc_url(get_permalink()); ?>" title="<?php printf(esc_attr__('Permalink to %s', 'electric_thwg'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_excerpt(); ?></a>
+                        <a href="<?php echo esc_url(get_permalink()); ?>" title="<?php printf(esc_attr__('Permalink to %s', 'electric-thwg'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_excerpt(); ?></a>
                         <p class="comments-link">
-                            <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric_thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric_thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric_thwg')); ?>
+                            <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric-thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric-thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric-thwg')); ?>
                         </p>
                     </li>
 
@@ -130,9 +137,9 @@ class Electric_Ephemera_Widget extends WP_Widget {
                 if (empty($link_url))
                     $link_url = get_permalink();
                 ?>
-                <a href="<?php echo esc_url($link_url); ?>" title="<?php printf(esc_attr__('Link to %s', 'electric_thwg'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_title(); ?>&nbsp;<span>&rarr;</span></a>
+                <a href="<?php echo esc_url($link_url); ?>" title="<?php printf(esc_attr__('Link to %s', 'electric-thwg'), the_title_attribute('echo=0')); ?>" rel="bookmark"><?php the_title(); ?>&nbsp;<span>&rarr;</span></a>
                 <p class="comments-link">
-                    <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric_thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric_thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric_thwg')); ?>
+                    <?php comments_popup_link(__('0 <span class="reply">comments &rarr;</span>', 'electric-thwg'), __('1 <span class="reply">comment &rarr;</span>', 'electric-thwg'), __('% <span class="reply">comments &rarr;</span>', 'electric-thwg')); ?>
                 </p>
             </li>
 
@@ -183,10 +190,10 @@ wp_cache_set('electric_ephemera_widget', $cache, 'widget');
         $title = isset($instance['title']) ? esc_attr($instance['title']) : '';
         $number = isset($instance['number']) ? absint($instance['number']) : 10;
         ?>
-        <p><label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'electric_thwg'); ?></label>
+        <p><label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'electric-thwg'); ?></label>
             <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
-            <p><label for="<?php echo esc_attr($this->get_field_id('number')); ?>"><?php _e('Number of posts to show:', 'electric_thwg'); ?></label>
+            <p><label for="<?php echo esc_attr($this->get_field_id('number')); ?>"><?php _e('Number of posts to show:', 'electric-thwg'); ?></label>
                 <input id="<?php echo esc_attr($this->get_field_id('number')); ?>" name="<?php echo esc_attr($this->get_field_name('number')); ?>" type="text" value="<?php echo esc_attr($number); ?>" size="3" /></p>
                 <?php
             }
@@ -200,13 +207,15 @@ wp_cache_set('electric_ephemera_widget', $cache, 'widget');
 class Electric_Recent_Posts extends WP_Widget {
 
     function __construct() {
-        $widget_ops = array('classname' => 'electric-recent-entries', 'description' => __("The most recent posts on your site, including their excerpt.", 'electric_thwg'));
+        $widget_ops = array('classname' => 'electric-recent-entries', 'description' => __("The most recent posts on your site, including their excerpt.", 'electric-thwg'));
         parent::__construct('electric-recent-posts', __('Electric Recent Posts'), $widget_ops);
         $this->alt_option_name = 'electric_recent_entries';
 
         add_action('save_post', array(&$this, 'flush_widget_cache'));
         add_action('deleted_post', array(&$this, 'flush_widget_cache'));
         add_action('switch_theme', array(&$this, 'flush_widget_cache'));
+
+
     }
 
     function widget($args, $instance) {
@@ -266,7 +275,7 @@ class Electric_Recent_Posts extends WP_Widget {
                         </h2>
                         <?php echo get_the_excerpt(); ?>
                         <a class="more-link" href="<?php esc_attr(the_permalink()) ?>">
-                            <?php _e('Read more ', 'electric_thwg')?>
+                            <?php _e('Read more ', 'electric-thwg')?>
                         </a>
                     </li>
                 <?php endwhile; ?>
@@ -323,12 +332,14 @@ class Electric_Recent_Comments extends WP_Widget {
 
     function __construct() {
         $widget_ops = array('classname' => 'electric-recent-comments', 'description' => __('The most recent comments, including nice avatars.'));
-        parent::__construct('electric-recent-comments', __('Electric Recent Comments', 'electric_thwg'), $widget_ops);
+        parent::__construct('electric-recent-comments', __('Electric Recent Comments', 'electric-thwg'), $widget_ops);
         $this->alt_option_name = 'electric_recent_comments';
 
 
         add_action('comment_post', array(&$this, 'flush_widget_cache'));
         add_action('transition_comment_status', array(&$this, 'flush_widget_cache'));
+
+
     }
 
     function flush_widget_cache() {
@@ -381,14 +392,14 @@ class Electric_Recent_Comments extends WP_Widget {
                 get_comment_author_link() .
                 '</div>' .
                 '<div class="posted-in">' .
-                __('in: ', 'electric_thwg') .
+                __('in: ', 'electric-thwg') .
                 '<a href="' . esc_url(get_permalink($comment->comment_post_ID )) . '">' .
                 get_the_title($comment->comment_post_ID) .
                 '</a>
                 </div>' .
                 '<p class="comment-content">' . $content . '</p>
                 <a class="more-link" href="' . esc_url(get_comment_link($comment->comment_ID)) . '">'
-                .__('Read more ', 'electric_thwg') .'
+                .__('Read more ', 'electric-thwg') .'
                 </a>
                 </li>';
             }
@@ -396,7 +407,7 @@ class Electric_Recent_Comments extends WP_Widget {
             $output .= '</div>'; //Flexslider div
             $output .= '</div>'; //widget-content div
         } else {
-            $output .= '<p>' . __('No recent comments', 'electric_thwg') . '</p>';
+            $output .= '<p>' . __('No recent comments', 'electric-thwg') . '</p>';
         }
 
         $output .= $after_widget;
@@ -434,9 +445,7 @@ class Electric_Recent_Comments extends WP_Widget {
         }
 
 /**
- * new WordPress Widget format
- * Wordpress 2.8 and above
- * @see http://codex.wordpress.org/Widgets_API#Developing_Widgets
+ * Twitter Widget
  */
 class Electric_Twitter_Posts_Widget extends WP_Widget {
 
@@ -446,8 +455,10 @@ class Electric_Twitter_Posts_Widget extends WP_Widget {
      * @return void
      **/
     function Electric_Twitter_Posts_Widget() {
-        $widget_ops = array( 'classname' => 'electric-twitter-posts', 'description' => 'Displays your tweets as posts, relies on Twitter Tools plugin' );
+        $widget_ops = array( 'classname' => 'electric-twitter-posts', 'description' => __('Displays your tweets as posts, relies on Twitter Tools plugin', 'electric-thwg') );
         $this->WP_Widget( 'electric-twitter-posts', 'Electric Twitter Posts', $widget_ops );
+
+
     }
 
     /**
@@ -474,15 +485,15 @@ class Electric_Twitter_Posts_Widget extends WP_Widget {
                 <ul class="recent-comments slides">
                     <?php while ( $tweets->have_posts() ): $tweets->the_post() ;?>
                     <li>
-                     <?php the_content(); ?>
-                     <a class="more-link" href="<?php esc_attr(the_permalink()) ?>">
-                            <?php _e('Read more ', 'electric_thwg')?>
-                        </a>
-                 </li>
-             <?php endwhile; ?>
-         </ul>
-     </div>
- </div>
+                       <?php the_content(); ?>
+                       <a class="more-link" href="<?php esc_attr(the_permalink()) ?>">
+                        <?php _e('Read more ', 'electric-thwg')?>
+                    </a>
+                </li>
+            <?php endwhile; ?>
+        </ul>
+    </div>
+</div>
 <?php endif ?>
 <?php
 
@@ -518,7 +529,7 @@ echo $after_widget;
         <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
             <p>
-                <label for="<?php echo $this->get_field_id('number_of_posts'); ?>"><?php _e('Number of Posts:', 'electric_thwg' ); ?></label>
+                <label for="<?php echo $this->get_field_id('number_of_posts'); ?>"><?php _e('Number of Posts:', 'electric-thwg' ); ?></label>
                 <input class="widefat" id="<?php echo $this->get_field_id('number_of_posts'); ?>" name="<?php echo $this->get_field_name('number_of_posts'); ?>" type="text" value="<?php echo $num_posts; ?>" />
             </p>
             <?php

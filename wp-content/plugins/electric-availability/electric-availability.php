@@ -9,7 +9,7 @@
   define( 'ELECTRICAVAILABILITY_PATH', plugin_dir_path(__FILE__) );
   class electric_availability_options {
 
-    protected $textdomain = "electric_availability";
+    protected $textdomain = "electric-availability";
     protected $editor_settings = array();
 
     function __construct() {
@@ -21,6 +21,8 @@
                 'teeny' => true,
                 'editor_css' => '<style>.mceIframeContainer {background: white;}</style>'
         );
+      //Load textdomain for translations
+        load_plugin_textdomain( $this->textdomain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
 
     function add_menu_page() {

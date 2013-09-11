@@ -2,7 +2,7 @@
 
 class Electric_Availability_Widget extends WP_Widget {
 
-    public $textdomain = "electric_availability";
+    public $textdomain = "electric-availability";
 
     /**
      * Register widget with WordPress.
@@ -10,6 +10,8 @@ class Electric_Availability_Widget extends WP_Widget {
     public function __construct() {
         $widget_ops = array('classname' => 'electric-availability-widget', 'description' => __('A widget to display your availability to accept new jobs', $this->textdomain));
         parent::__construct('electric_availability_widget', __('Electric Availability Widget', $this->textdomain), $widget_ops);
+        //Load textdomain for translations
+        load_plugin_textdomain( $this->textdomain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
     }
 
     /**

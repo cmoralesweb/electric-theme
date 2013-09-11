@@ -9,7 +9,7 @@
  */
 
   class Electric_Portfolio {
-    protected $textdomain = "electric_portfolio";
+    protected $textdomain = "electric-portfolio";
     protected $prefix = "electric_pf_";
     protected $prefix_alt = "electric-pf-";
     protected $longname = "electric_portfolio";
@@ -30,6 +30,9 @@
         //Add scripts
         add_action('admin_enqueue_scripts', array(&$this,'add_scripts'));
         add_action('wp_enqueue_scripts', array(&$this,'front_scripts'));
+
+        //Load textdomain for translations
+        load_plugin_textdomain( $this->textdomain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
         //Modify routes
         //add_filter('rewrite_rules_array', array(&$this,'mmp_rewrite_rules'));
