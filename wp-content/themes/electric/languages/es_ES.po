@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: electric\n"
+"Project-Id-Version: Electric Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-11 00:30+0100\n"
-"PO-Revision-Date: 2013-09-11 00:48+0100\n"
+"POT-Creation-Date: 2013-09-11 16:46+0100\n"
+"PO-Revision-Date: 2013-09-11 16:47+0100\n"
 "Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
 "Language-Team: Carlos Morales <carlos@cmorales.es>\n"
 "Language: \n"
@@ -12,8 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../comments.php:39
@@ -256,8 +254,12 @@ msgid "Year"
 msgstr "Año"
 
 #: ../single-electric_portfolio.php:55
-msgid "See other jobs in:"
+msgid "See other jobs in: "
 msgstr "Ver otros trabajos en:"
+
+#: ../single-electric_portfolio.php:56
+msgid "Built with: "
+msgstr "Creado con: "
 
 #: ../sidebar.php:22
 msgid "Meta"
