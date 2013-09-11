@@ -22,7 +22,7 @@
         /* Add all the actions to their corresponding hooks */
         add_action('init', array(&$this,'post_types_register')); //Register the post type
         add_action('init', array(&$this, 'category_taxonomy'), 0);//Create taxonomy
-        add_action('init', array(&$this, 'technology_taxonomy'), 0);//Create taxonomy
+        add_action('init', array(&$this, 'tool_taxonomy'), 0);//Create taxonomy
 
         //Add hook save function
         add_action('save_post', array(&$this,'save_custom_fields'), 10, 2);
@@ -77,7 +77,7 @@
             'has_archive' => false, //Archive is created using a Custom Page
             'rewrite' => array('slug' => __('portfolio', $this->textdomain)),
             'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'comments', 'page-attributes'),
-            'taxonomies' => array($this->prefix .'category', $this->prefix .'technology'),
+            'taxonomies' => array($this->prefix .'category', $this->prefix .'tool'),
             'description' => __('Collection of your best jobs', $this->textdomain),
             'register_meta_box_cb' => array(&$this,'add_custom_fields_box')
             )
@@ -113,29 +113,29 @@ register_taxonomy(
                   );
 }
 
-function technology_taxonomy() {
+function tool_taxonomy() {
     $labels = array(
-                    'name' => __('Portfolio technology', $this->textdomain),
-                    'singular_name' => __('Technology', $this->textdomain),
-                    'search_items' => __('Technology', $this->textdomain),
-                    'popular_items' => __('Popular Portfolio technologies', $this->textdomain),
-                    'all_items' => __('All Portfolio technologies', $this->textdomain),
-                    'edit_item' => __('Edit Portfolio technology', $this->textdomain),
-                    'update_item' => __('Update Portfolio technology', $this->textdomain),
-                    'add_new_item' => __('Add new Portfolio technology', $this->textdomain),
-                    'new_item_name' => __('New Portfolio technology', $this->textdomain),
-                    'separate_items_with_commas' => __('Separate items with commas', $this->textdomain),
-                    'add_or_remove_items' => __('Add or remove items', $this->textdomain),
-                    'choose_from_most_used' => __('Choose from most used Portfolio technologies', $this->textdomain),
-                    'menu_name' => __('Technologies', $this->textdomain),
+                    'name' => __('Portfolio tool', $this->textdomain),
+                    'singular_name' => __('Tool', $this->textdomain),
+                    'search_items' => __('Search by tools', $this->textdomain),
+                    'popular_items' => __('Popular Portfolio tools', $this->textdomain),
+                    'all_items' => __('All Portfolio tools', $this->textdomain),
+                    'edit_item' => __('Edit Portfolio tool', $this->textdomain),
+                    'update_item' => __('Update Portfolio tool', $this->textdomain),
+                    'add_new_item' => __('Add new Portfolio tool', $this->textdomain),
+                    'new_item_name' => __('New Portfolio tool', $this->textdomain),
+                    'separate_items_with_commas' => __('Separate tools with commas', $this->textdomain),
+                    'add_or_remove_items' => __('Add or remove tools', $this->textdomain),
+                    'choose_from_most_used' => __('Choose from most used Portfolio tools', $this->textdomain),
+                    'menu_name' => __('Tools', $this->textdomain),
                     );
 register_taxonomy(
-                  $this->prefix .'technology', $this->longname, array(
+                  $this->prefix .'tool', $this->longname, array(
                                                                       'hierarchical' => false,
                                                                       'labels' => $labels,
-                                                                      'query_var' => $this->prefix_alt .'technology',
+                                                                      'query_var' => $this->prefix_alt .'tool',
                                                                       'rewrite' => array(
-                                                                                         'slug' => __('portfolio/technology', $this->textdomain),
+                                                                                         'slug' => __('portfolio/tool', $this->textdomain),
                                                                                          'hierarchical' => true )
                                                                       )
                   );
