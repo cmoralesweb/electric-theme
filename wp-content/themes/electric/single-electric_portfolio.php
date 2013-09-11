@@ -52,9 +52,9 @@ get_header();
                     </div><!-- .entry-content -->
 
                     <footer class="entry-meta">
-                        <p><?php echo get_the_term_list($post->ID, 'electric_pf_category', __('See other jobs in:', 'electric'), '  ', ''); ?></p>
+                        <p><?php echo get_the_term_list($post->ID, 'electric_pf_category', __('See other jobs in: ', 'electric'), '  ', ''); ?></p>
+                        <p><?php echo get_the_term_list($post->ID, 'electric_pf_tool', __('Built with: ', 'electric'), '  ', ''); ?></p>
                         <?php edit_post_link(__('Edit', 'electric'), '<span class="edit-link">', '</span>'); ?>
-
                     </footer><!-- .entry-meta -->
                     <?php comments_template('', true); ?>
                 </div>
