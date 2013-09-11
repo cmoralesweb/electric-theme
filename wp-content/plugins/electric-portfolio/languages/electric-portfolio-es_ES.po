@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Electric Portfolio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-11 13:40+0100\n"
+"PO-Revision-Date: 2013-09-11 13:44+0100\n"
+"Last-Translator: Carlos Morales <carlos@cmorales.es>\n"
+"Language-Team: Carlos Morales <carlos@cmorales.es>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../widget.php:10
+msgid "Shows portfolio works in a slider"
+msgstr "Muestra trabajos del portafolio en un slider (carrusel)"
+
+#: ../widget.php:14
+msgid "Frontpage"
+msgstr "Portada"
+
+#: ../widget.php:15
+msgid "Small widget"
+msgstr "Widget reducido"
+
+#: ../widget.php:43
+msgid "More about"
+msgstr "Más sobre"
+
+#: ../widget.php:105
+msgid "Title"
+msgstr "Título"
+
+#: ../widget.php:111
+msgid "Widget style"
+msgstr "Estilo del widget"
+
+#: ../electric-custom-post-types.php:59
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: ../electric-custom-post-types.php:60
+msgid "All Portfolio items"
+msgstr "Todos los elementos del portafolio"
+
+#: ../electric-custom-post-types.php:61
+msgid "Portfolio item"
+msgstr "Elemento de portafolio"
+
+#: ../electric-custom-post-types.php:62
+#: ../electric-custom-post-types.php:63
+msgid "Add new Portfolio item"
+msgstr "Añadir nuevo elemento de portafolio"
+
+#: ../electric-custom-post-types.php:64
+msgid "Edit"
+msgstr "Editar"
+
+#: ../electric-custom-post-types.php:65
+msgid "Edit Portfolio item"
+msgstr "Editar elemento de portafolio"
+
+#: ../electric-custom-post-types.php:66
+msgid "New Portfolio item"
+msgstr "Nuevo elemento de portafolio"
+
+#: ../electric-custom-post-types.php:67
+#: ../electric-custom-post-types.php:68
+msgid "View Portfolio item"
+msgstr "Ver elemento de portafolio"
+
+#: ../electric-custom-post-types.php:69
+msgid "Search Portfolio items"
+msgstr "Buscar elementos de portafolio"
+
+#: ../electric-custom-post-types.php:70
+msgid "No Portfolio items found"
+msgstr "No se han encontrado elementos de portafolio"
+
+#: ../electric-custom-post-types.php:71
+msgid "There are no Portfolio items in the trash"
+msgstr "No hay elementos de portafolio en la papelera"
+
+#: ../electric-custom-post-types.php:78
+msgid "portfolio"
+msgstr "portafolio"
+
+#: ../electric-custom-post-types.php:81
+msgid "Collection of your best jobs"
+msgstr "Colección de tus mejores trabajos"
+
+#: ../electric-custom-post-types.php:92
+#: ../electric-custom-post-types.php:93
+msgid "Portfolio category"
+msgstr "Categoría"
+
+#: ../electric-custom-post-types.php:94
+msgid "Search by Portfolio category"
+msgstr "Buscar por categoría"
+
+#: ../electric-custom-post-types.php:95
+msgid "Popular Portfolio categories"
+msgstr "Categorías más usadas"
+
+#: ../electric-custom-post-types.php:96
+msgid "All Portfolio categories"
+msgstr "Todas las categorías"
+
+#: ../electric-custom-post-types.php:97
+msgid "Edit Portfolio category"
+msgstr "Editar categoría"
+
+#: ../electric-custom-post-types.php:98
+msgid "Update Portfolio category"
+msgstr "Actualizar categoría"
+
+#: ../electric-custom-post-types.php:99
+msgid "Add new Portfolio category"
+msgstr "Añadir nueva categoría"
+
+#: ../electric-custom-post-types.php:100
+msgid "New Portfolio category"
+msgstr "Nueva categoría"
+
+#: ../electric-custom-post-types.php:101
+msgid "Separate categories with commas"
+msgstr "Separar categorías con comas"
+
+#: ../electric-custom-post-types.php:102
+msgid "Add or remove Portfolio categories"
+msgstr "Añadir o eliminar categorías"
+
+#: ../electric-custom-post-types.php:103
+msgid "Choose from most used Portfolio categories"
+msgstr "Elige entre las categorías más usadas"
+
+#: ../electric-custom-post-types.php:104
+msgid "Categories"
+msgstr "Categorías"
+
+#: ../electric-custom-post-types.php:111
+msgid "portfolio/category"
+msgstr "portafolio/categoria"
+
+#: ../electric-custom-post-types.php:118
+msgid "Portfolio tool"
+msgstr "Herramienta"
+
+#: ../electric-custom-post-types.php:119
+msgid "Tool"
+msgstr "Herramienta"
+
+#: ../electric-custom-post-types.php:120
+msgid "Search by tools"
+msgstr "Buscar por herramientas"
+
+#: ../electric-custom-post-types.php:121
+msgid "Popular Portfolio tools"
+msgstr "Herramientas más usadas"
+
+#: ../electric-custom-post-types.php:122
+msgid "All Portfolio tools"
+msgstr "Todas las herramientas"
+
+#: ../electric-custom-post-types.php:123
+msgid "Edit Portfolio tool"
+msgstr "Editar herramienta"
+
+#: ../electric-custom-post-types.php:124
+msgid "Update Portfolio tool"
+msgstr "Actualizar herramienta"
+
+#: ../electric-custom-post-types.php:125
+msgid "Add new Portfolio tool"
+msgstr "Añadir nueva herramienta"
+
+#: ../electric-custom-post-types.php:126
+msgid "New Portfolio tool"
+msgstr "Nueva herramienta"
+
+#: ../electric-custom-post-types.php:127
+msgid "Separate tools with commas"
+msgstr "Separar herramientas con comas"
+
+#: ../electric-custom-post-types.php:128
+msgid "Add or remove tools"
+msgstr "Añadir o eliminar herramientas"
+
+#: ../electric-custom-post-types.php:129
+msgid "Choose from most used Portfolio tools"
+msgstr "Elige entre las herramientas más usadas"
+
+#: ../electric-custom-post-types.php:130
+msgid "Tools"
+msgstr "Herramientas"
+
+#: ../electric-custom-post-types.php:138
+msgid "portfolio/tool"
+msgstr "portafolio/herramienta"
+
+#: ../electric-custom-post-types.php:200
+msgid "Upload Gallery"
+msgstr "Cargar galería"
+
+#: ../electric-custom-post-types.php:203
+msgid "Clear gallery"
+msgstr "Limpiar galería"
+
+#: ../electric-custom-post-types.php:213
+msgid "Upload a gallery for this element."
+msgstr "Cargar una galería para este elemento."
+
+#: ../electric-custom-post-types.php:224
+msgid "Job details"
+msgstr "Detalles del trabajo"
+
+#: ../electric-custom-post-types.php:232
+msgid "Gallery"
+msgstr "Galería"
+
