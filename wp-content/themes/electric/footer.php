@@ -24,7 +24,6 @@
         <a href="http://wordpress.org/" title="<?php esc_attr_e('A Semantic Personal Publishing Platform', 'electric'); ?>" rel="generator"><?php printf(__('Proudly powered by %s', 'electric'), 'WordPress'); ?></a>
         <span class="sep"> | </span>
         <?php printf(__('Theme: %1$s by %2$s.', 'electric'), 'Electric Theme', '<a href="http://cmorales.es" rel="designer">Carlos Morales</a>'); ?>
-        <p>Sample images and illustrations by <a href="http://www.behance.net/danolas">Daniel Rivera, Danolas</a>. </p>
     </div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
