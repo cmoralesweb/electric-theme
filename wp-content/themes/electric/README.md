@@ -8,3 +8,5 @@ The CSS was created with SASS, so you can customize it like a CSS-guru if you wa
 This theme includes an options panel, so you can set everything to your taste and remove stuff you don't need/want. All the theme was created that way, that's why some funcionality comes separated as a plugin.
 
 You are free to use the theme for any use. You can remove the footer link if you want, though it would be nice if you kept it :)
+
+Sample images courtesy of Daniel Rivera, Danolas http://www.behance.net/danolas
