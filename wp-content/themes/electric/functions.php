@@ -68,6 +68,7 @@ function electric_setup() {
         add_image_size('home-featured-thumb', 180, 80, true); // Thumbnail for featured post in the home page
         add_image_size('post-thumb', 333, 148, true); // Regular post thumb
         add_image_size('portfolio-thumb', 159, 71, true); // Portfolio type thumb
+        add_image_size('portfolio-medium', 250, 167, true); // Portfolio medium thumb
 
         /**
          * Enable support for Infinite Scroll

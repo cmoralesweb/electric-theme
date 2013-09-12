@@ -59,7 +59,7 @@
                 ?>">
                 <a href="<?php the_permalink(); ?>" title="<?php printf(esc_attr__('See more about %s', 'electric'), the_title_attribute('echo=0')); ?>" rel="bookmark">
                     <h2 class="portfolio-title"><?php the_title(); ?></h2>
-                    <div class="thumbnail"><?php the_post_thumbnail('portfolio-thumb'); ?></div>
+                    <div class="thumbnail"><?php the_post_thumbnail('portfolio-medium'); ?></div>
                 </a>
             </li>
             <?php

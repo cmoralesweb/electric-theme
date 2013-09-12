@@ -2686,6 +2686,9 @@ object {
 }
 .page-template-template-portfolio-archive-php .portfolio-title {
   color: inherit;
+  font-size: 1.23529em;
+  line-height: 1.33333em;
+  margin-bottom: 0.5em;
 }
 
 .aktt_tweet .entry-content {

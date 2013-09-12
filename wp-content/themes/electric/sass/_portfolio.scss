@@ -134,5 +134,7 @@
     }
     .portfolio-title {
         color: inherit;
+        @include adjust-font-size-to($h4-size);
+        margin-bottom: 0.5em;
     }
 }
