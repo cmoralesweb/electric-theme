@@ -9,4 +9,4 @@ This theme includes an options panel, so you can set everything to your taste an
 
 You are free to use the theme for any use. You can remove the footer link if you want, though it would be nice if you kept it :)
 
-Sample images courtesy of Daniel Rivera, Danolas http://www.behance.net/danolas
+Sample images courtesy of Daniel Rivera, Danolas http://www.behance.net/danolas (not covered by GPL license, ask HIM to use them!!!)
