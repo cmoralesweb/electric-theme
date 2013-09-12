@@ -250,6 +250,8 @@ footer.entry-meta {
                     left: 0%;
                     transition: left 1s;
                     z-index: 200;
+                    display: inline-block;
+                    max-width: 100%;
                 }
                 .meta {
                     position: absolute;

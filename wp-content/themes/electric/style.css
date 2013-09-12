@@ -683,7 +683,8 @@ input[type="submit"],
 .entry-header .entry-date, .comments-link, .blog .with-thumb .entry-header .entry-meta .more,
 .archive .with-thumb .entry-header .entry-meta .more, .wp-caption,
 .entry-attachment, .widgetarea-container .widget-title,
-.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .single-electric_portfolio .entry-header, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .aktt_tweet .thumbnail-wrapper, .flex-control-nav, .tooltip-container {
+.bottom-sidebar .widget-title, .electric-availability-widget, .specialty-title, .single-electric_portfolio .entry-content-wrapper,
+.single-electric_portfolio .images, .single-electric_portfolio .entry-header, .page-template-template-portfolio-archive-php .entry-content, .page-template-template-portfolio-archive-php .filter-wrapper, .page-template-template-portfolio-archive-php .page-title, .aktt_tweet .thumbnail-wrapper, .flex-control-nav, .tooltip-container {
   text-align: center;
 }
 
@@ -1931,6 +1932,8 @@ footer.entry-meta .meta {
   left: 0%;
   transition: left 1s;
   z-index: 200;
+  display: inline-block;
+  max-width: 100%;
 }
 .blog .with-thumb .entry-header .entry-meta .meta,
 .archive .with-thumb .entry-header .entry-meta .meta {
@@ -2538,6 +2541,12 @@ object {
 /***      =Portafolio         ***/
 /*******************************/
 /*******************************/
+.single-electric_portfolio .thumbnail,
+.page-template-template-portfolio-archive-php .thumbnail {
+  display: inline-block;
+  max-width: 100%;
+}
+
 .single-electric_portfolio .hentry {
   *zoom: 1;
 }
@@ -3398,8 +3407,6 @@ html[xmlns] .slides {
   width: 200px;
   padding: 0.5em;
   z-index: 1000;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
 .tooltip-container:after, .tooltip-container:before {

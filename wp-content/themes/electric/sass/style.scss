@@ -115,7 +115,7 @@ $nav-control-hover: $color2;
     width:200px;
     padding: 0.5em;
     z-index: 1000;
-    @include box-shadow(0 3px 3px rgba(black, 0.5));
+    box-shadow: 0 3px 3px rgba(black, 0.5);
     &:after,
     &:before {
         top: 100%;
