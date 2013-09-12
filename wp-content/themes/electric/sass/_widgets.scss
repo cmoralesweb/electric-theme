@@ -283,7 +283,9 @@
         li {
             @extend %rounded-corner-sml;
             display: inline-block;
-            margin-right: 1em;
+            margin-right: 10px;
+            box-sizing: border-box;
+            width: 21.5%;
             &:hover,
             &:focus,
             &:active {
@@ -295,9 +297,12 @@
         img {
             @extend %rounded-corner-sml;
             opacity: 0.5;
+            max-width: 100%;
+            height: auto;
         }
         .flex-active {
             box-shadow: 0 0 0 5px white, 0 0 0 1px #CCC, 0 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 5px 15px 5px 5px;
             img {
                 opacity: 1;
             }

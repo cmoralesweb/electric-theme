@@ -16,6 +16,11 @@
     .bottom-sidebar > h1{
         color: $color1;
     }
+    @include at-breakpoint($desktop-layout){
+        .mission-statement {
+            font-size: 3em;
+        }
+    }
 }
 
 

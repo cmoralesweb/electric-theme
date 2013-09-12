@@ -2398,16 +2398,21 @@ object {
 }
 .portfolio-showcase .thumbs li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 10px;
+  box-sizing: border-box;
+  width: 21.5%;
 }
 .portfolio-showcase .thumbs li:hover img, .portfolio-showcase .thumbs li:focus img, .portfolio-showcase .thumbs li:active img {
   opacity: 1;
 }
 .portfolio-showcase .thumbs img {
   opacity: 0.5;
+  max-width: 100%;
+  height: auto;
 }
 .portfolio-showcase .thumbs .flex-active {
   box-shadow: 0 0 0 5px white, 0 0 0 1px #cccccc, 0 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 5px 15px 5px 5px;
 }
 .portfolio-showcase .thumbs .flex-active img {
   opacity: 1;
@@ -2474,6 +2479,11 @@ object {
 .home.single-page .intro .widget-title,
 .home.single-page .bottom-sidebar > h1 {
   color: #114f99;
+}
+@media (min-width: 58.4375em) {
+  .home.single-page .mission-statement {
+    font-size: 3em;
+  }
 }
 
 .bottom-sidebar {

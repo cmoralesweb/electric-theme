@@ -64,10 +64,10 @@ function electric_setup() {
         // Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
         set_post_thumbnail_size(668, 296, true); // Feature image for post (main)
 // Add custom image sizes
-        add_image_size('home-featured', 902, 400, true); // Featured post in the home page
+        add_image_size('home-featured', 740, 400, true); // Featured post in the home page
         add_image_size('home-featured-thumb', 180, 80, true); // Thumbnail for featured post in the home page
         add_image_size('post-thumb', 333, 148, true); // Regular post thumb
-        add_image_size('portfolio-thumb', 250, 167, true); // Portfolio type thumb
+        add_image_size('portfolio-thumb', 159, 71, true); // Portfolio type thumb
 
         /**
          * Enable support for Infinite Scroll
