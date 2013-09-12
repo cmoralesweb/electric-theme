@@ -2563,11 +2563,12 @@ object {
     margin-right: 2.85714%;
   }
 }
-.single-electric_portfolio .entry-content-wrapper {
-  float: right;
-  margin-right: 0;
-  #margin-left: -2em;
-  display: inline;
+@media (min-width: 58.4375em) {
+  .single-electric_portfolio .entry-content-wrapper {
+    text-align: left;
+    float: right;
+    margin-right: 0;
+  }
 }
 .single-electric_portfolio .images {
   margin-top: 1.64706em;
@@ -2588,15 +2589,25 @@ object {
 }
 
 .details {
+  *zoom: 1;
   border-top: 1px solid white;
   box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.6), 0 -2px 1px -1px rgba(0, 0, 0, 0.2), 0 3px 1px -1px white;
   padding: 0.5em 0;
 }
+.details:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .details dt {
   font-weight: bold;
+  float: left;
+  clear: left;
 }
 .details dl {
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0.5em;
+  float: left;
+  clear: right;
 }
 
 .page-template-template-portfolio-archive-php .wp-post-image {

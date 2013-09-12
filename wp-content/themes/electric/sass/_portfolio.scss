@@ -26,7 +26,10 @@
         }
     }
     .entry-content-wrapper {
-        @include omega;
+        @include at-breakpoint($desktop-layout) {
+            text-align: left;
+            @include omega;
+        }
     }
 
     .images {
@@ -61,11 +64,16 @@
 }
 
 .details {
+    @include pie-clearfix;
     dt {
         font-weight: bold;
+        float: left;
+        clear: left;
     }
     dl {
-        margin-bottom: 0.5em;
+        margin: 0 0 0.5em 0.5em;
+        float: left;
+        clear: right;
     }
     @include divider(both);
     padding: 0.5em 0;
