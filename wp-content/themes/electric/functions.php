@@ -144,11 +144,9 @@ function electric_scripts() {
    }
 
    //Enqueue Prefix First soon to avoid FOUC
-   wp_enqueue_script('prefixfree', get_template_directory_uri() . '/js/vendor/prefixfree.min.js', array('jquery'), $cache, false);
+   wp_enqueue_script('prefixfree', get_template_directory_uri() . '/js/vendor/prefixfree.min.js', array(), $cache, false);
 
-   //Get jquery from CDN
-   wp_deregister_script('jquery');
-   wp_register_script('jquery','http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(),'1.10.1');
+
 
      //Check if Icon Fonts are used
    if(!empty($theme_options['use_icon_fonts']) ) {
@@ -189,20 +187,6 @@ if(!empty($theme_options['use_google_fonts']) ){
 
 add_action('wp_enqueue_scripts', 'electric_scripts');
 
-
-
-if(!is_admin()) {
-/**
- * Hack to display fallback JavaScript *right* after jQuery loaded.
- */
-function __jquery_fallback( $src, $handle =null){static $run_next =false;if( $run_next ){
-    $local = get_template_directory_uri(). '/js/libs/jquery-1.10.1.min.js';
-    echo '<script type="text/javascript">' . '/*//<![CDATA[*/window.jQuery || document.write(\'<script type="text/javascript" src="$local"><\/script>\');/*//]]>*/</script>';
-    $run_next =false;}if( $handle ==='jquery')
-    $run_next =true;return $src;}
-    add_filter('script_loader_src','__jquery_fallback',10,2);
-    add_action('wp_head','__jquery_fallback',2);
-}
 
 
 require( get_template_directory() . '/inc/plugin-activation.php' );
