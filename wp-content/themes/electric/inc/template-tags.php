@@ -337,7 +337,7 @@ function electric_the_title() {
 function electric_gog_analytics() {
         $theme_options = get_option('electric_theme_options');
         if (!empty($theme_options['google_analytics'])):
-            if (!is_admin()):
+            if (!is_user_logged_in()):
                 ?>
             <script type="text/javascript">
 
