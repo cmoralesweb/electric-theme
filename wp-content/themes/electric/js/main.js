@@ -56,7 +56,8 @@ jQuery( document ).ready( function( $ ) {
         $('.portfolio-showcase').flexslider({//Galeria inicio
             controlsContainer: ".showcase",
             manualControls:"ol.thumbs li",
-            pauseOnHover: true
+            pauseOnHover: true,
+            slideshow: false
         });
 
         //Widgets cautiously fired one by one.
