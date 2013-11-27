@@ -151,6 +151,8 @@
             font-size: 2.5em;
             text-decoration: none;
             @extend [data-icon]:before;
+            display: block;
+            padding: 0.1em;
         }
         &.low {
             border-color: $error-color;
