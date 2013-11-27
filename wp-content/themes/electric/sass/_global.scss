@@ -503,17 +503,22 @@ ul{
 
 
 
-.fancy-list {
+%fancy-list {
     list-style-type: none;
+    color: $color2;
     li {
+        position: relative;
         &:before {
-            @extend [data-icon]:before;
             margin-right: 0.25em;
+            position: absolute;
+            top: 0.5em;
+            left: -30px;
         }
     }
 }
 
 .fancy-list-one {
+    @extend %fancy-list;
     li {
         &:before {
             @extend %icon-thumbs-up:before;
@@ -522,6 +527,7 @@ ul{
 }
 
 .fancy-list-two {
+    @extend %fancy-list;
     li {
         &:before {
             @extend %icon-thumbs-up-2:before;
@@ -530,6 +536,7 @@ ul{
 }
 
 .fancy-list-three {
+    @extend %fancy-list;
     li {
         &:before {
             @extend %icon-pushpin:before;
@@ -538,6 +545,7 @@ ul{
 }
 
 .fancy-list-four {
+    @extend %fancy-list;
     li {
         &:before {
             @extend %icon-clock:before;
@@ -546,67 +554,75 @@ ul{
 }
 
 .fancy-list-five {
-    li {
-        &:before {
-            @extend %icon-heart:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-heart:before;
     }
+}
 }
 
 .fancy-list-six {
-    li {
-        &:before {
-            @extend %icon-equalizer:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-equalizer:before;
     }
+}
 }
 
 .fancy-list-seven {
-    li {
-        &:before {
-            @extend %icon-arrow-right-alt1:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-arrow-right-alt1:before;
     }
+}
 }
 
 .fancy-list-eight {
-    li {
-        &:before {
-            @extend %icon-checkmark:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-checkmark:before;
     }
+}
 }
 
 .fancy-list-nine {
-    li {
-        &:before {
-            @extend %icon-cancel:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-cancel:before;
     }
+}
 }
 
 .fancy-list-ten {
-    li {
-        &:before {
-            @extend %icon-plus:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-plus:before;
     }
+}
 }
 
 .fancy-list-eleven {
-    li {
-        &:before {
-            @extend %icon-minus:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-minus:before;
     }
+}
 }
 
 .fancy-list-twelve {
-    li {
-        &:before {
-            @extend %icon-pencil:before;
-        }
+   @extend %fancy-list;
+   li {
+    &:before {
+        @extend %icon-pencil:before;
     }
+}
 }
 
 
