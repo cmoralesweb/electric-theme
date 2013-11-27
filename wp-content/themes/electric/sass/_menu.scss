@@ -41,13 +41,9 @@
             }
             a {
                 width: 200px;
-                &:hover {
-                }
             }
             li {
                 margin: 0.25em;
-            }
-            &:hover > a {
             }
         }
     }
@@ -122,9 +118,12 @@
             display: inline-block;
             transition: transform 0.25s;
         }
-        &:hover,
-        &:focus,
-        &:active {
+
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        > a {
             &:after{
                 transform: rotate(-180deg);
             }
