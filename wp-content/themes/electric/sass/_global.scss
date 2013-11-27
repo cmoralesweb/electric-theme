@@ -133,7 +133,7 @@ body{
 
 
 @include at-breakpoint($mobile-layout) {
-   #homelink {
+ #homelink {
     img {
         max-width: 3em;
     }
@@ -436,7 +436,7 @@ a[href$=".zip"] {
 }
 
 a[rel="external"] {
- &:after {
+   &:after {
     content: '\27b2';
 }
 }
@@ -505,10 +505,10 @@ ul{
 
 %fancy-list {
     list-style-type: none;
-    color: $color2;
     li {
         position: relative;
         &:before {
+            color: $color2;
             margin-right: 0.25em;
             position: absolute;
             top: 0.5em;
@@ -554,8 +554,8 @@ ul{
 }
 
 .fancy-list-five {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-heart:before;
     }
@@ -563,8 +563,8 @@ ul{
 }
 
 .fancy-list-six {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-equalizer:before;
     }
@@ -572,8 +572,8 @@ ul{
 }
 
 .fancy-list-seven {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-arrow-right-alt1:before;
     }
@@ -581,8 +581,8 @@ ul{
 }
 
 .fancy-list-eight {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-checkmark:before;
     }
@@ -590,8 +590,8 @@ ul{
 }
 
 .fancy-list-nine {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-cancel:before;
     }
@@ -599,8 +599,8 @@ ul{
 }
 
 .fancy-list-ten {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-plus:before;
     }
@@ -608,8 +608,8 @@ ul{
 }
 
 .fancy-list-eleven {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-minus:before;
     }
@@ -617,8 +617,8 @@ ul{
 }
 
 .fancy-list-twelve {
-   @extend %fancy-list;
-   li {
+ @extend %fancy-list;
+ li {
     &:before {
         @extend %icon-pencil:before;
     }
@@ -728,7 +728,7 @@ blockquote {
 .aligncenter,
 .alignleft,
 .alignright {
-   @include trailer;
+ @include trailer;
 }
 
 /* Text meant only for screen readers */

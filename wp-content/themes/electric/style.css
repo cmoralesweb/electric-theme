@@ -1516,12 +1516,12 @@ ul {
 
 .fancy-list-one, .fancy-list-two, .fancy-list-three, .fancy-list-four, .fancy-list-five, .fancy-list-six, .fancy-list-seven, .fancy-list-eight, .fancy-list-nine, .fancy-list-ten, .fancy-list-eleven, .fancy-list-twelve {
   list-style-type: none;
-  color: #3c82c0;
 }
 .fancy-list-one li, .fancy-list-two li, .fancy-list-three li, .fancy-list-four li, .fancy-list-five li, .fancy-list-six li, .fancy-list-seven li, .fancy-list-eight li, .fancy-list-nine li, .fancy-list-ten li, .fancy-list-eleven li, .fancy-list-twelve li {
   position: relative;
 }
 .fancy-list-one li:before, .fancy-list-two li:before, .fancy-list-three li:before, .fancy-list-four li:before, .fancy-list-five li:before, .fancy-list-six li:before, .fancy-list-seven li:before, .fancy-list-eight li:before, .fancy-list-nine li:before, .fancy-list-ten li:before, .fancy-list-eleven li:before, .fancy-list-twelve li:before {
+  color: #3c82c0;
   margin-right: 0.25em;
   position: absolute;
   top: 0.5em;
