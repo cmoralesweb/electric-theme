@@ -245,12 +245,7 @@ function electric_register_required_plugins() {
                            'name'      => 'Jetpack',
                            'slug'      => 'jetpack',
                            'required'  => false,
-                           ),
-                     array(
-                           'name' 		=> 'Twitter Tools',
-                           'slug' 		=> 'twitter-tools',
-                           'required' 	=> false,
-                           ),
+                           )
 
                      );
 
